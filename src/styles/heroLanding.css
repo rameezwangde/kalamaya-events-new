@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -279,6 +280,7 @@ body, html {
     opacity: 0;
     transform: translate(-50%, -20px);
   }
+
   to {
     opacity: 1;
     transform: translate(-50%, 0);
@@ -290,6 +292,7 @@ body, html {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -297,13 +300,25 @@ body, html {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scrollWheel {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(12px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
 }
 
 
@@ -314,16 +329,31 @@ body, html {
   .worlds-text {
     font-size: 48px;
   }
+
   .infinite-text {
     font-size: 32px;
   }
+
   .bottom-content {
     bottom: 8%;
   }
-  .left-content { left: 5%; }
-  .right-content { right: 5%; }
-  .headline { font-size: 20px; }
-  .btn { padding: 10px 24px; font-size: 13px; }
+
+  .left-content {
+    left: 5%;
+  }
+
+  .right-content {
+    right: 5%;
+  }
+
+  .headline {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
 }
 
 /* Mobile Devices */
@@ -331,52 +361,87 @@ body, html {
   .hero-landing {
     flex-direction: column;
   }
+
   .hero-panel {
     width: 100%;
     height: 50vh;
   }
+
   .top-center-heading {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  .worlds-text { font-size: 36px; }
-  .infinite-text { font-size: 28px; }
-  
+
+  .worlds-text {
+    font-size: 36px;
+  }
+
+  .infinite-text {
+    font-size: 28px;
+  }
+
   .center-brand-area {
     /* Hide the complex center divider on mobile to avoid overlap, or redesign */
-    display: none; 
+    display: none;
   }
-  
+
   .left-content {
     bottom: 5%;
     left: 5%;
     width: 90%;
   }
-  
+
   .right-content {
     bottom: 5%;
     right: 5%;
     text-align: right;
     width: 90%;
   }
-  
+
   .scroll-indicator {
     bottom: 2%;
   }
 }
 
 /* NEW LOGO STYLES */
-.top-left-logo { position: absolute; top: 40px; left: 60px; z-index: 10; opacity: 0; animation: fadeIn 2s ease-out forwards 0.5s; mix-blend-mode: screen; }
-.top-left-logo img { height: 70px; width: auto; }
-.center-logo { height: 120px; width: auto; object-fit: contain; }
-.events-logo { margin-right: 15px; }
-.cineverse-logo { margin-left: 15px; height: 160px; }
+.top-left-logo {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards 0.5s;
+  mix-blend-mode: screen;
+}
+
+.top-left-logo img {
+  height: 70px;
+  width: auto;
+}
+
+.center-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+.events-logo {
+  margin-right: 15px;
+}
+
+.cineverse-logo {
+  margin-left: 15px;
+  height: 160px;
+}
 
 
 /* RING OVERLAY */
 .ring-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center;
   mix-blend-mode: screen;
@@ -404,6 +469,13 @@ body, html {
 }
 
 @keyframes pulseGlow {
-  0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.6; }
-  100% { transform: translate(-50%, -50%) scale(1.05); opacity: 1; }
+  0% {
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
 }

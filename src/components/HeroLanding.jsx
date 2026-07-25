@@ -4,8 +4,10 @@ import rightBackground from '../assets/right side image.png';
 import eventsLogo from '../assets/events logo.jpeg';
 import cineverseLogo from '../assets/cineverse logo.jpeg';
 import ringImage from '../assets/ring_reference.png';
+import { useNavigate } from 'react-router-dom';
 
 const HeroLanding = () => {
+  const navigate = useNavigate();
   return (
     <section className="hero-landing">
       {/* Left side panel */}
@@ -27,7 +29,7 @@ const HeroLanding = () => {
             EVENTS THAT <span className="highlight-blue">CONNECT.</span><br />
             EXPERIENCES THAT <span className="highlight-blue">LAST.</span>
           </h2>
-          <button className="btn btn-blue">
+          <button className="btn btn-blue" onClick={() => navigate('/events')}>
             EXPLORE EVENTS <span className="arrow">&#x2197;</span>
           </button>
         </div>
