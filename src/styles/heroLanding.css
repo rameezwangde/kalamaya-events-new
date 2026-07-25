@@ -1,0 +1,409 @@
+/* RESET AND BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* HERO CONTAINER */
+.hero-landing {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+/* HALF PANELS */
+.hero-panel {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* LEFT SIDE */
+.left-overlay {
+  background: linear-gradient(to right, rgba(0, 15, 30, 0.4) 0%, rgba(0, 20, 50, 0.6) 70%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+/* RIGHT SIDE */
+.right-overlay {
+  background: linear-gradient(to left, rgba(30, 10, 0, 0.4) 0%, rgba(50, 10, 0, 0.6) 70%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+/* TOP CENTER HEADING */
+.top-center-heading {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  max-width: 600px;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeDown 1.5s ease-out forwards 0.3s;
+}
+
+.legacy-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #dcdcdc;
+  margin-bottom: 8px;
+}
+
+.worlds-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: -5px;
+}
+
+.infinite-text {
+  font-family: 'Great Vibes', 'Alex Brush', cursive;
+  font-size: 42px;
+  background: linear-gradient(90deg, #ff3333 0%, #a64dff 50%, #4da6ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+
+/* CENTER BRAND AREA */
+.center-brand-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards 0.8s;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.center-divider-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.diamond {
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transform: rotate(45deg);
+}
+
+.logo-placeholder {
+  width: 120px;
+  height: 80px;
+  /* Since we don't have exact logos, we leave this transparent to let background image portions show if they exist. 
+     The structure is perfectly centered to frame whatever is in the backgrounds. */
+}
+
+/* BOTTOM CONTENT */
+.bottom-content {
+  position: absolute;
+  bottom: 12%;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeUp 1.5s ease-out forwards 1.2s;
+}
+
+.left-content {
+  left: 10%;
+}
+
+.right-content {
+  right: 10%;
+  text-align: left;
+}
+
+.headline {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.highlight-blue {
+  color: #4da6ff;
+  font-weight: 700;
+}
+
+.highlight-red {
+  color: #e63946;
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards 1.5s;
+}
+
+.btn-blue {
+  border: 1px solid #4da6ff;
+  color: #4da6ff;
+}
+
+.btn-blue:hover {
+  box-shadow: 0 0 15px rgba(77, 166, 255, 0.4);
+  background: rgba(77, 166, 255, 0.05);
+}
+
+.btn-red {
+  border: 1px solid #e63946;
+  color: #e63946;
+}
+
+.btn-red:hover {
+  box-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
+  background: rgba(230, 57, 70, 0.05);
+}
+
+.arrow {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/* SCROLL INDICATOR */
+.scroll-indicator {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards 2s;
+}
+
+.mouse {
+  width: 22px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.wheel {
+  width: 3px;
+  height: 6px;
+  background: #fff;
+  border-radius: 2px;
+  margin-top: 6px;
+  animation: scrollWheel 1.5s infinite ease-in-out;
+}
+
+.arrow-down {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .worlds-text {
+    font-size: 48px;
+  }
+  .infinite-text {
+    font-size: 32px;
+  }
+  .bottom-content {
+    bottom: 8%;
+  }
+  .left-content { left: 5%; }
+  .right-content { right: 5%; }
+  .headline { font-size: 20px; }
+  .btn { padding: 10px 24px; font-size: 13px; }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .hero-landing {
+    flex-direction: column;
+  }
+  .hero-panel {
+    width: 100%;
+    height: 50vh;
+  }
+  .top-center-heading {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .worlds-text { font-size: 36px; }
+  .infinite-text { font-size: 28px; }
+  
+  .center-brand-area {
+    /* Hide the complex center divider on mobile to avoid overlap, or redesign */
+    display: none; 
+  }
+  
+  .left-content {
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .right-content {
+    bottom: 5%;
+    right: 5%;
+    text-align: right;
+    width: 90%;
+  }
+  
+  .scroll-indicator {
+    bottom: 2%;
+  }
+}
+
+/* NEW LOGO STYLES */
+.top-left-logo { position: absolute; top: 40px; left: 60px; z-index: 10; opacity: 0; animation: fadeIn 2s ease-out forwards 0.5s; mix-blend-mode: screen; }
+.top-left-logo img { height: 70px; width: auto; }
+.center-logo { height: 120px; width: auto; object-fit: contain; }
+.events-logo { margin-right: 15px; }
+.cineverse-logo { margin-left: 15px; height: 160px; }
+
+
+/* RING OVERLAY */
+.ring-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards 0.5s;
+  -webkit-mask-image: radial-gradient(circle, transparent 15%, black 25%, black 35%, transparent 55%);
+  mask-image: radial-gradient(circle, transparent 15%, black 25%, black 35%, transparent 55%);
+}
+
+/* SUBTLE CENTER GLOW */
+.center-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(166, 77, 255, 0.15) 0%, rgba(230, 57, 70, 0.05) 40%, rgba(77, 166, 255, 0.05) 60%, transparent 80%);
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  animation: pulseGlow 4s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { transform: translate(-50%, -50%) scale(0.95); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(1.05); opacity: 1; }
+}
