@@ -1,18 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/navbar.css';
 import eventsLogo from '../assets/events logo.jpeg';
 
 const navItems = [
-  { name: 'Home', active: true },
-  { name: 'About Kalamaya', active: false },
-  { name: 'Corporate Event Services', active: false },
-  { name: 'Industries We Serve', active: false },
-  { name: 'Destination Weddings', active: false },
-  { name: 'Portfolio / Case Studies', active: false },
-  { name: 'Locations', active: false },
-  { name: 'Blog & Insights', active: false },
-  { name: 'Contact', active: false },
+  { name: 'Home', path: '/' },
+  { name: 'About Kalamaya', path: '/about' },
+  { name: 'Corporate Event Services', path: '/events' },
+  { name: 'Industries We Serve', path: '#' },
+  { name: 'Destination Weddings', path: '#' },
+  { name: 'Portfolio / Case Studies', path: '#' },
+  { name: 'Locations', path: '#' },
+  { name: 'Blog & Insights', path: '#' },
+  { name: 'Contact', path: '#' },
 ];
 
 const containerVariants = {
@@ -35,6 +36,8 @@ const itemVariants = {
 };
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <motion.nav 
       className="luxury-navbar"
@@ -45,17 +48,19 @@ const Navbar = () => {
       <div className="nav-container">
         {/* LOGO */}
         <div className="nav-logo">
-           <img src={eventsLogo} alt="Kalamaya Events" className="nav-img-logo" />
+           <Link to="/">
+             <img src={eventsLogo} alt="Kalamaya Events" className="nav-img-logo" />
+           </Link>
         </div>
         
         {/* LINKS */}
         <ul className="nav-links">
           {navItems.map((item, index) => (
             <motion.li key={index} variants={itemVariants}>
-              <a href="#" className={item.active ? 'active' : ''}>
+              <Link to={item.path} className={location.pathname === item.path ? 'active' : ''}>
                 {item.name}
                 <span className="underline-effect"></span>
-              </a>
+              </Link>
             </motion.li>
           ))}
         </ul>
