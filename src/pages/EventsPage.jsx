@@ -4,6 +4,8 @@ import '../styles/eventsHero.css';
 import rightBackground from '../assets/right hero.png';
 import Navbar from '../components/Navbar';
 import OurStory from '../components/OurStory';
+import OurServices from '../components/OurServices';
+import Footer from '../components/Footer';
 
 const EventsPage = () => {
   return (
@@ -122,6 +124,8 @@ const EventsPage = () => {
       </section>
     </div>
     <OurStory />
+    <OurServices />
+    <Footer />
     </>
   );
 };
