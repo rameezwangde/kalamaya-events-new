@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* CTA */}
         <motion.div className="nav-cta-wrapper" variants={itemVariants}>
           <button className="nav-cta">
-            LET'S PLAN YOUR EVENT <span className="cta-arrow">&#x2197;</span>
+            LET'S PLAN YOUR EVENT
           </button>
         </motion.div>
 

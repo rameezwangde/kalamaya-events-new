@@ -1,0 +1,334 @@
+.our-story-section {
+  position: relative;
+  width: 100%;
+  background-color: #F8F3EA;
+  background-image: radial-gradient(rgba(200, 161, 90, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.story-container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 40px;
+  padding-bottom: 180px; /* Extra padding for floating stats card */
+  display: flex;
+  min-height: 800px;
+}
+
+/* LEFT SIDE */
+.story-left {
+  width: 46%;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.story-content {
+  max-width: 520px;
+}
+
+.story-label {
+  font-family: 'Montserrat', sans-serif;
+  color: #C8A15A;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.story-heading {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: #0B2E59;
+}
+
+.text-gold {
+  color: #C8A15A;
+}
+
+.story-text-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.story-dots {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  opacity: 0.3;
+}
+
+.story-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #C8A15A;
+  border-radius: 50%;
+}
+
+.story-desc {
+  color: #3D3D3D; /* Dark grey for better readability but still luxury */
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 470px;
+  margin-bottom: 20px;
+}
+
+.story-signature-block {
+  margin-top: 30px;
+}
+
+.signature-font {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #C8A15A;
+  margin-bottom: 5px;
+}
+
+.signature-subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #0B2E59;
+  line-height: 1.4;
+}
+
+/* CURVED DIVIDER (Matches Hero) */
+.story-curved-divider {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 15%;
+  height: 100%;
+  background-color: #0B2E59;
+  z-index: 10;
+  border-left: 2px solid #C8A15A;
+  transform: translateX(-50%);
+  border-radius: 50% 0 0 50% / 100% 0 0 100%;
+  box-shadow: -10px 0 30px rgba(11, 46, 89, 0.1);
+}
+
+/* RIGHT SIDE */
+.story-right {
+  width: 54%;
+  position: relative;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+}
+
+.story-image-wrapper {
+  width: 100%;
+  height: 600px;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(11, 46, 89, 0.15);
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(1.05) brightness(0.95);
+}
+
+/* FLOATING STATS CARD */
+.stats-card-wrapper {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 30;
+}
+
+.stats-card {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 15px 50px rgba(11, 46, 89, 0.08);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 20px;
+  position: relative;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Divider lines between stats */
+.stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: rgba(200, 161, 90, 0.2);
+}
+
+.stat-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(248, 243, 234, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0B2E59;
+  margin-bottom: 20px;
+  border: 1px solid rgba(200, 161, 90, 0.3);
+}
+
+.stat-number {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #0B2E59;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #C8A15A;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.stat-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #757575;
+  line-height: 1.5;
+  max-width: 200px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .story-heading {
+    font-size: 3rem;
+  }
+  .story-image-wrapper {
+    height: 500px;
+  }
+  .stat-desc {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .story-container {
+    flex-direction: column;
+    padding-bottom: 120px;
+  }
+  
+  .story-left {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  
+  .story-content {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .story-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .story-desc {
+    text-align: center;
+  }
+  
+  .story-dots {
+    display: none; /* Hide dots on mobile/tablet to reduce clutter */
+  }
+  
+  .story-curved-divider {
+    display: none; /* Hide curve on mobile/tablet layout */
+  }
+  
+  .story-right {
+    width: 100%;
+  }
+  
+  .story-image-wrapper {
+    height: 400px;
+  }
+  
+  .stats-card-wrapper {
+    position: relative;
+    transform: translate(0, 0);
+    left: 0;
+    width: 100%;
+    margin-top: 60px;
+  }
+  
+  .stats-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+  
+  /* Reset divider lines for 2x2 grid */
+  .stat-item::after {
+    display: none;
+  }
+  
+  .stat-item:nth-child(odd)::after {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .story-heading {
+    font-size: 2.5rem;
+  }
+  
+  .stats-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item::after {
+    display: none !important;
+  }
+  
+  .stat-item {
+    margin-bottom: 30px;
+  }
+  
+  .stat-item:last-child {
+    margin-bottom: 0;
+  }
+}

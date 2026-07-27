@@ -3,10 +3,12 @@ import { motion } from 'framer-motion';
 import '../styles/eventsHero.css';
 import rightBackground from '../assets/right hero.png';
 import Navbar from '../components/Navbar';
+import OurStory from '../components/OurStory';
 
 const EventsPage = () => {
   return (
-    <div className="hero-container">
+    <>
+      <div className="hero-container">
       {/* Navbar with Framer Motion */}
       <motion.div
         initial={{ y: -100, opacity: 0 }}
@@ -119,6 +121,8 @@ const EventsPage = () => {
         </div>
       </section>
     </div>
+    <OurStory />
+    </>
   );
 };
 
