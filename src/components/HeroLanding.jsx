@@ -6,7 +6,7 @@ import darkLeftBackground from '../assets/left side image.png';
 import darkRightBackground from '../assets/right side image.png';
 import eventsLogo from '../assets/events logo transparent.png';
 import cineverseLogo from '../assets/cineverse logo transparent.png';
-import portalRing from '../assets/white ring reduced bloom.png';
+import portalRing from '../../white ring.png';
 
 const Divider = () => (
   <div className="portal-divider" aria-hidden="true"><span /><i /><span /></div>
