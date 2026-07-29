@@ -3,7 +3,6 @@ import leftBackground from '../assets/left side image.png';
 import rightBackground from '../assets/right side image.png';
 import eventsLogo from '../assets/events logo.jpeg';
 import cineverseLogo from '../assets/cineverse logo.jpeg';
-import ringImage from '../assets/ring_reference.png';
 import { useNavigate } from 'react-router-dom';
 
 const HeroLanding = () => {
@@ -43,6 +42,11 @@ const HeroLanding = () => {
         ></div>
         <div className="overlay right-overlay"></div>
 
+        {/* Top Right Logo */}
+        <div className="top-right-logo">
+          <img src={cineverseLogo} alt="Kalamaya Cineverse" className="center-logo cineverse-logo" />
+        </div>
+
         {/* Right Bottom Content */}
         <div className="bottom-content right-content">
           <h2 className="headline">
@@ -54,6 +58,13 @@ const HeroLanding = () => {
           </button>
         </div>
       </div>
+
+      <img
+        src="/ring.png"
+        alt=""
+        aria-hidden="true"
+        className="hero-energy-ring"
+      />
 
       {/* Top-centre heading */}
       <div className="top-center-heading">
@@ -69,7 +80,7 @@ const HeroLanding = () => {
 
       {/* Centre brand area */}
       <div className="center-brand-area">
-        <img src={eventsLogo} alt="Kalamaya Events" className="center-logo events-logo" />
+        <img src={eventsLogo} alt="" aria-hidden="true" className="center-logo events-logo events-logo-slot" />
 
         <div className="center-divider-group">
           <div className="vertical-line"></div>
@@ -77,7 +88,7 @@ const HeroLanding = () => {
           <div className="vertical-line"></div>
         </div>
 
-        <img src={cineverseLogo} alt="Kalamaya Cineverse" className="center-logo cineverse-logo" />
+        <img src={cineverseLogo} alt="" aria-hidden="true" className="center-logo cineverse-logo cineverse-logo-slot" />
       </div>
 
       {/* Scroll indicator */}

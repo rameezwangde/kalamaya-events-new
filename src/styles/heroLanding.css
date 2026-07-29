@@ -39,6 +39,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,13 +114,13 @@ html {
 /* CENTER BRAND AREA */
 .center-brand-area {
   position: absolute;
-  top: 50%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: clamp(15px, 2vw, 25px);
   z-index: 10;
   opacity: 0;
   animation: fadeIn 2s ease-out forwards 0.8s;
@@ -129,9 +130,11 @@ html {
 
 .center-divider-group {
   display: flex;
+  flex: 0 0 clamp(520px, 46vw, 820px);
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  visibility: hidden;
 }
 
 .vertical-line {
@@ -326,6 +329,14 @@ html {
 
 /* Tablets */
 @media (max-width: 1024px) {
+  .center-brand-area {
+    top: 55%;
+  }
+
+  .center-divider-group {
+    flex-basis: clamp(440px, 58vw, 650px);
+  }
+
   .worlds-text {
     font-size: 48px;
   }
@@ -381,8 +392,15 @@ html {
   }
 
   .center-brand-area {
-    /* Hide the complex center divider on mobile to avoid overlap, or redesign */
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .center-divider-group {
+    flex: 0 0 auto;
+    width: clamp(440px, 58vw, 650px);
+    aspect-ratio: 3 / 2;
   }
 
   .left-content {
@@ -419,6 +437,20 @@ html {
   width: auto;
 }
 
+.top-right-logo {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards 0.5s;
+  mix-blend-mode: screen;
+}
+
+.top-right-logo .cineverse-logo {
+  margin-left: 0;
+}
+
 .center-logo {
   height: 120px;
   width: auto;
@@ -429,28 +461,60 @@ html {
   margin-right: 15px;
 }
 
+.events-logo-slot {
+  visibility: hidden;
+}
+
 .cineverse-logo {
   margin-left: 15px;
   height: 160px;
 }
 
+.cineverse-logo-slot {
+  visibility: hidden;
+}
 
-/* RING OVERLAY */
-.ring-overlay {
+
+/* CENTER ENERGY RING */
+.hero-energy-ring {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  mix-blend-mode: screen;
+  left: 50%;
+  top: 54%;
+  width: clamp(520px, 46vw, 820px);
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
   pointer-events: none;
-  z-index: 5;
-  opacity: 0;
-  animation: fadeIn 2s ease-out forwards 0.5s;
-  -webkit-mask-image: radial-gradient(circle, transparent 15%, black 25%, black 35%, transparent 55%);
-  mask-image: radial-gradient(circle, transparent 15%, black 25%, black 35%, transparent 55%);
+  user-select: none;
+  z-index: 2;
+  opacity: 0.92;
+  mix-blend-mode: screen;
+  filter:
+    drop-shadow(0 0 18px rgba(80, 100, 255, 0.18))
+    drop-shadow(0 0 18px rgba(255, 70, 30, 0.16));
+}
+
+@media (max-width: 1024px) {
+  .hero-energy-ring {
+    width: clamp(440px, 58vw, 650px);
+    top: 55%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-energy-ring {
+    width: min(92vw, 520px);
+    top: 53%;
+    opacity: 0.78;
+  }
+
+  .center-brand-area {
+    top: 53%;
+  }
+
+  .center-divider-group {
+    width: min(92vw, 520px);
+  }
 }
 
 /* SUBTLE CENTER GLOW */
