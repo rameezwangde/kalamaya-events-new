@@ -19,25 +19,22 @@ const AngularButton = ({ children, tone, onClick }) => (
   </button>
 );
 
-const ThemeMenu = ({ theme, onThemeChange, open, onToggle }) => (
-  <div className="landing-theme-menu">
-    <button className="light-landing__menu-button" type="button" aria-label="Open landing page menu" aria-expanded={open} onClick={onToggle}>
-      <span /><span /><span />
-    </button>
-    {open && (
-      <div className="landing-theme-menu__panel">
-        <span>APPEARANCE</span>
-        <button type="button" onClick={() => onThemeChange(theme === 'light' ? 'dark' : 'light')}>
-          Switch to {theme === 'light' ? 'dark' : 'light'} mode
-        </button>
-      </div>
+const ThemeMenu = ({ theme, onThemeChange }) => (
+  <button 
+    className={`theme-toggle-btn ${theme === 'dark' ? 'dark-mode' : 'light-mode'}`} 
+    onClick={() => onThemeChange(theme === 'light' ? 'dark' : 'light')}
+    aria-label="Toggle theme"
+  >
+    {theme === 'light' ? (
+      <svg className="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+    ) : (
+      <svg className="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
     )}
-  </div>
+  </button>
 );
 
 const LightLanding = ({ theme, setTheme }) => {
   const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <main className="light-landing">
@@ -53,7 +50,9 @@ const LightLanding = ({ theme, setTheme }) => {
         <button className="light-landing__events-logo" type="button" onClick={() => navigate('/events')}>
           <img src={eventsLogo} alt="Kalamaya Events India" />
         </button>
-        <ThemeMenu theme={theme} onThemeChange={setTheme} open={menuOpen} onToggle={() => setMenuOpen((value) => !value)} />
+        <div className="light-landing__cineverse-top-logo">
+          <img src={cineverseLogo} alt="Kalamaya Cineverse" />
+        </div>
       </header>
 
       <div className="light-landing__headline">
@@ -63,19 +62,12 @@ const LightLanding = ({ theme, setTheme }) => {
       </div>
 
       <section className="light-landing__left-content" aria-label="Kalamaya Events">
-        <img className="light-landing__secondary-logo" src={eventsLogo} alt="Kalamaya Events India" />
         <p>EVENTS THAT <strong>CONNECT.</strong><br />EXPERIENCES THAT <strong>LAST.</strong></p>
-        <Divider />
         <AngularButton tone="blue" onClick={() => navigate('/events')}>EXPLORE EVENTS</AngularButton>
       </section>
 
-      <section className="light-landing__cineverse-brand" aria-label="Kalamaya Cineverse">
-        <img src={cineverseLogo} alt="Kalamaya Cineverse" />
-        <p>FILMS THAT <strong>INSPIRE.</strong><br />STORIES THAT <strong>STAY.</strong></p>
-      </section>
-
       <section className="light-landing__right-content" aria-label="Explore Kalamaya Cineverse">
-        <Divider />
+        <p>FILMS THAT <strong>INSPIRE.</strong><br />STORIES THAT <strong>STAY.</strong></p>
         <AngularButton tone="red">EXPLORE CINEVERSE</AngularButton>
       </section>
 
@@ -90,13 +82,13 @@ const LightLanding = ({ theme, setTheme }) => {
         <span className="light-landing__mouse"><i /></span>
         <svg viewBox="0 0 16 22"><path d="M8 1v18m-5-5 5 5 5-5" /></svg>
       </div>
+      <ThemeMenu theme={theme} onThemeChange={setTheme} />
     </main>
   );
 };
 
 const DarkLanding = ({ theme, setTheme }) => {
   const navigate = useNavigate();
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <section className="hero-landing">
@@ -130,7 +122,7 @@ const DarkLanding = ({ theme, setTheme }) => {
         <img src={cineverseLogo} alt="" aria-hidden="true" className="center-logo cineverse-logo cineverse-logo-slot" />
       </div>
       <div className="scroll-indicator"><div className="mouse"><div className="wheel" /></div><div className="arrow-down">&#x2193;</div></div>
-      <ThemeMenu theme={theme} onThemeChange={setTheme} open={menuOpen} onToggle={() => setMenuOpen((value) => !value)} />
+      <ThemeMenu theme={theme} onThemeChange={setTheme} />
     </section>
   );
 };
