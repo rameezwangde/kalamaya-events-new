@@ -13,7 +13,7 @@ const navItems = [
   { name: 'Portfolio / Case Studies', path: '/portfolio' },
   { name: 'Locations', path: '#' },
   { name: 'Blog & Insights', path: '#' },
-  { name: 'Contact', path: '#' },
+  { name: 'Contact', path: '/contact' },
 ];
 
 const containerVariants = {

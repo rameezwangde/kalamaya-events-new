@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage'
 import CorporatePage from './pages/CorporatePage'
 import WeddingPage from './pages/WeddingPage'
 import PortfolioPage from './pages/PortfolioPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/corporate" element={<CorporatePage />} />
         <Route path="/weddings" element={<WeddingPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   )
