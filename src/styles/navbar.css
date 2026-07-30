@@ -75,7 +75,7 @@
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #C8A15A;
+  color: #0B2E59;
 }
 
 /* Hover underline */
@@ -84,7 +84,7 @@
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   transition: width 0.25s ease;
 }
 
@@ -99,7 +99,7 @@
   bottom: -6px;
   width: 36px;
   height: 2px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
 }
 .nav-links li a.active .underline-effect {
   display: none;
@@ -135,7 +135,7 @@
 }
 
 .cta-arrow {
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 1.2rem;
   transition: transform 0.3s ease;
 }

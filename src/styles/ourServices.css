@@ -28,7 +28,7 @@
 
 .services-label {
   font-family: 'Montserrat', sans-serif;
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -46,7 +46,7 @@
 }
 
 .text-blue { color: #0B2E59; }
-.text-gold { color: #C8A15A; }
+.text-gold { color: #0B2E59; }
 
 .services-desc-wrapper {
   position: relative;
@@ -65,7 +65,7 @@
 .service-dot {
   width: 4px;
   height: 4px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   border-radius: 50%;
 }
 
@@ -114,14 +114,14 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #C8A15A;
+  color: #0B2E59;
   letter-spacing: 2px;
 }
 
 .title-underline {
   width: 40px;
   height: 2px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   margin-top: 10px;
 }
 
@@ -167,7 +167,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #C8A15A;
+  color: #0B2E59;
   margin-bottom: 25px;
 }
 

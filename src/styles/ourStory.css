@@ -32,7 +32,7 @@
 
 .story-label {
   font-family: 'Montserrat', sans-serif;
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -54,7 +54,7 @@
 }
 
 .text-gold {
-  color: #C8A15A;
+  color: #0B2E59;
 }
 
 .story-text-wrapper {
@@ -75,7 +75,7 @@
 .story-dot {
   width: 4px;
   height: 4px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   border-radius: 50%;
 }
 
@@ -95,7 +95,7 @@
 .signature-font {
   font-family: 'Great Vibes', cursive;
   font-size: 2.8rem;
-  color: #C8A15A;
+  color: #0B2E59;
   margin-bottom: 5px;
 }
 
@@ -116,7 +116,7 @@
   height: 100%;
   background-color: #0B2E59;
   z-index: 10;
-  border-left: 2px solid #C8A15A;
+  border-left: 2px solid #0B2E59;
   transform: translateX(-50%);
   border-radius: 50% 0 0 50% / 100% 0 0 100%;
   box-shadow: -10px 0 30px rgba(11, 46, 89, 0.1);
@@ -214,7 +214,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
-  color: #C8A15A;
+  color: #0B2E59;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 10px;

@@ -37,7 +37,7 @@
 
 .about-label {
   font-family: 'Montserrat', sans-serif;
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 1rem;
   letter-spacing: 3px;
   font-weight: 700;
@@ -117,7 +117,7 @@
   bottom: -30px;
   left: -30px;
   background-color: #0B2E59;
-  border: 2px solid #C8A15A;
+  border: 2px solid #0B2E59;
   border-radius: 50%;
   width: 160px;
   height: 160px;
@@ -132,7 +132,7 @@
 .experience-badge-floating .years {
   font-family: 'Anton', sans-serif;
   font-size: 3rem;
-  color: #C8A15A;
+  color: #0B2E59;
   line-height: 1;
 }
 

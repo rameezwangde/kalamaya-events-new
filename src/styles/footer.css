@@ -48,7 +48,7 @@
 
 .footer-tagline {
   font-family: 'Montserrat', sans-serif;
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 0.9rem;
   letter-spacing: 2px;
   font-weight: 600;
@@ -88,7 +88,7 @@
 .footer-heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.95rem;
-  color: #C8A15A;
+  color: #0B2E59;
   letter-spacing: 1.5px;
   margin-bottom: 25px;
   font-weight: 700;
@@ -115,12 +115,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #C8A15A;
+  color: #0B2E59;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   color: #0B2E59;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .footer-links a:hover {
-  color: #C8A15A;
+  color: #0B2E59;
 }
 
 .footer-contact {
@@ -161,7 +161,7 @@
 .contact-label {
   display: block;
   font-weight: 600;
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 0.85rem;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -202,7 +202,7 @@
 }
 
 .legal-links a:hover {
-  color: #C8A15A;
+  color: #0B2E59;
 }
 
 .dot-sep {

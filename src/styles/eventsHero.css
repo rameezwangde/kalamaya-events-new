@@ -16,7 +16,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #F8F3EA; /* Luxury warm beige */
+  background-color: #F8F3EA;
+  /* Luxury warm beige */
   /* Subtle paper texture approximation */
   background-image: radial-gradient(rgba(200, 161, 90, 0.03) 1px, transparent 1px);
   background-size: 20px 20px;
@@ -38,7 +39,7 @@ body {
   height: 100%;
   background-color: #0B2E59;
   z-index: 10;
-  border-left: 2px solid #C8A15A;
+  border-left: 2px solid #0B2E59;
   transform: translateX(-50%);
   border-radius: 50% 0 0 50% / 100% 0 0 100%;
   box-shadow: -10px 0 30px rgba(11, 46, 89, 0.2);
@@ -68,7 +69,7 @@ body {
 .dot {
   width: 4px;
   height: 4px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   border-radius: 50%;
 }
 
@@ -81,7 +82,7 @@ body {
 
 .small-label {
   font-family: 'Montserrat', sans-serif;
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -103,7 +104,7 @@ body {
 }
 
 .text-gold {
-  color: #C8A15A;
+  color: #0B2E59;
 }
 
 .description {
@@ -144,7 +145,7 @@ body {
 }
 
 .btn-primary .arrow {
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 1.2rem;
 }
 
@@ -168,7 +169,7 @@ body {
 }
 
 .btn-secondary .arrow {
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 1.2rem;
 }
 
@@ -181,7 +182,7 @@ body {
 .badge-circle {
   width: 55px;
   height: 55px;
-  border: 1px solid #C8A15A;
+  border: 1px solid #0B2E59;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -259,7 +260,7 @@ body {
 .mouse-outline {
   width: 24px;
   height: 36px;
-  border: 1px solid #C8A15A;
+  border: 1px solid #0B2E59;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -269,20 +270,20 @@ body {
 .mouse-dot {
   width: 4px;
   height: 6px;
-  background-color: #C8A15A;
+  background-color: #0B2E59;
   border-radius: 2px;
 }
 
 .scroll-text {
   font-family: 'Inter', sans-serif;
   font-size: 0.7rem;
-  color: #C8A15A;
+  color: #0B2E59;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .scroll-arrow {
-  color: #C8A15A;
+  color: #0B2E59;
   font-size: 1rem;
   line-height: 0.5;
 }
@@ -293,13 +294,16 @@ body {
     width: 50%;
     padding-left: 5%;
   }
+
   .hero-right {
     width: 50%;
   }
+
   .curved-divider {
     left: 50%;
     width: 10%;
   }
+
   .main-heading {
     font-size: 4rem;
   }
@@ -309,19 +313,23 @@ body {
   .hero-section {
     flex-direction: column;
   }
+
   .hero-left {
     width: 100%;
     height: 60vh;
     padding: 0 5%;
     justify-content: center;
   }
+
   .hero-right {
     width: 100%;
     height: 40vh;
   }
+
   .curved-divider {
     display: none;
   }
+
   .buttons-group {
     flex-direction: column;
   }

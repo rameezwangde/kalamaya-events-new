@@ -11,121 +11,121 @@ const EventsPage = () => {
   return (
     <>
       <div className="hero-container">
-      {/* Navbar with Framer Motion */}
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <Navbar />
-      </motion.div>
-
-      <section className="hero-section">
-        {/* Curved Divider Overlay (Huge Navy Curve) */}
-        <div className="curved-divider"></div>
-
-        {/* LEFT PANEL */}
-        <div className="hero-left">
-          {/* Subtle decorative contour/dots */}
-          <div className="dots-decoration">
-            {[...Array(20)].map((_, i) => <div key={i} className="dot"></div>)}
-          </div>
-          
-          <div className="left-content">
-            <motion.p 
-              className="small-label"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              ONE LEGACY. INFINITE POSSIBILITIES.
-            </motion.p>
-            
-            <motion.h1 
-              className="main-heading"
-              initial={{ y: 40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              <span className="text-blue">EXTRAORDINARY</span><br/>
-              <span className="text-blue">EVENTS.</span><br/>
-              <span className="text-gold">TIMELESS</span><br/>
-              <span className="text-gold">IMPRESSIONS.</span>
-            </motion.h1>
-            
-            <motion.p 
-              className="description"
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              From corporate milestones to dream weddings, we craft experiences that inspire, connect and remain unforgettable.
-            </motion.p>
-            
-            <motion.div 
-              className="buttons-group"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.8 }}
-            >
-              <button className="btn-primary">
-                EXPLORE EVENTS <span className="arrow">&#x2197;</span>
-              </button>
-              <button className="btn-secondary">
-                DISCOVER KALAMAYA <span className="arrow">&#x2197;</span>
-              </button>
-            </motion.div>
-
-            <motion.div 
-              className="experience-badge"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
-            >
-              <div className="badge-circle">
-                15+
-              </div>
-              <div className="badge-text">
-                <span className="years-text">YEARS OF CRAFTING</span><br/>
-                <span className="memorable-text">MEMORABLE EXPERIENCES</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-
-        {/* RIGHT PANEL */}
-        <motion.div 
-          className="hero-right"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, delay: 0.5 }}
+        {/* Navbar with Framer Motion */}
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div 
-            className="right-image" 
-            style={{ backgroundImage: `url("${rightBackground}")` }}
-          ></div>
-          <div className="image-overlay"></div>
+          <Navbar />
         </motion.div>
 
-        {/* SCROLL INDICATOR */}
-        <div className="scroll-indicator-wrapper">
-          <motion.div 
-            className="scroll-mouse"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          >
-            <div className="mouse-outline">
-              <div className="mouse-dot"></div>
+        <section className="hero-section">
+          {/* Curved Divider Overlay (Huge Navy Curve) */}
+          <div className="curved-divider"></div>
+
+          {/* LEFT PANEL */}
+          <div className="hero-left">
+            {/* Subtle decorative contour/dots */}
+            <div className="dots-decoration">
+              {[...Array(20)].map((_, i) => <div key={i} className="dot"></div>)}
             </div>
-            <span className="scroll-text">SCROLL TO EXPLORE</span>
-            <span className="scroll-arrow">&#x2304;</span>
+
+            <div className="left-content">
+              <motion.p
+                className="small-label"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                ONE LEGACY. INFINITE POSSIBILITIES.
+              </motion.p>
+
+              <motion.h1
+                className="main-heading"
+                initial={{ y: 40, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              >
+                <span className="text-blue">EXTRAORDINARY</span><br />
+                <span className="text-blue">EVENTS.</span><br />
+                <span className="text-blue">TIMELESS</span><br />
+                <span className="text-blue">IMPRESSIONS.</span>
+              </motion.h1>
+
+              <motion.p
+                className="description"
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+              >
+                From corporate milestones to dream weddings, we craft experiences that inspire, connect and remain unforgettable.
+              </motion.p>
+
+              <motion.div
+                className="buttons-group"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.8 }}
+              >
+                <button className="btn-primary">
+                  EXPLORE EVENTS <span className="arrow">&#x2197;</span>
+                </button>
+                <button className="btn-secondary">
+                  DISCOVER KALAMAYA <span className="arrow">&#x2197;</span>
+                </button>
+              </motion.div>
+
+              <motion.div
+                className="experience-badge"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1 }}
+              >
+                <div className="badge-circle">
+                  15+
+                </div>
+                <div className="badge-text">
+                  <span className="years-text">YEARS OF CRAFTING</span><br />
+                  <span className="memorable-text">MEMORABLE EXPERIENCES</span>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* RIGHT PANEL */}
+          <motion.div
+            className="hero-right"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2, delay: 0.5 }}
+          >
+            <div
+              className="right-image"
+              style={{ backgroundImage: `url("${rightBackground}")` }}
+            ></div>
+            <div className="image-overlay"></div>
           </motion.div>
-        </div>
-      </section>
-    </div>
-    <OurStory />
-    <OurServices />
-    <Footer />
+
+          {/* SCROLL INDICATOR */}
+          <div className="scroll-indicator-wrapper">
+            <motion.div
+              className="scroll-mouse"
+              animate={{ y: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            >
+              <div className="mouse-outline">
+                <div className="mouse-dot"></div>
+              </div>
+              <span className="scroll-text">SCROLL TO EXPLORE</span>
+              <span className="scroll-arrow">&#x2304;</span>
+            </motion.div>
+          </div>
+        </section>
+      </div>
+      <OurStory />
+      <OurServices />
+      <Footer />
     </>
   );
 };
