@@ -97,7 +97,7 @@
   content: '';
   position: absolute;
   bottom: -6px;
-  width: 36px;
+  width: 100%;
   height: 2px;
   background-color: #0B2E59;
 }

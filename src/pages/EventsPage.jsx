@@ -21,8 +21,7 @@ const EventsPage = () => {
         </motion.div>
 
         <section className="hero-section">
-          {/* Curved Divider Overlay (Huge Navy Curve) */}
-          <div className="curved-divider"></div>
+          {/* Curved Divider Overlay (Huge Navy Curve) removed per request */}
 
           {/* LEFT PANEL */}
           <div className="hero-left">
