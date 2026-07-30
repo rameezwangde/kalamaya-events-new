@@ -41,15 +41,15 @@ const IconStar = () => (
 const statsData = [
   {
     icon: <IconExperience />,
-    number: "10+",
+    number: "30+",
     label: "YEARS OF EXPERIENCE",
-    desc: "A decade of crafting exceptional experiences."
+    desc: "Decades of crafting exceptional experiences."
   },
   {
     icon: <IconEvents />,
-    number: "1500+",
-    label: "EVENTS DELIVERED",
-    desc: "Successful events across India and beyond."
+    number: "3000+",
+    label: "SUCCESSFUL EVENTS",
+    desc: "Flawless execution across India and beyond."
   },
   {
     icon: <IconGlobe />,
@@ -98,9 +98,8 @@ const OurStory = () => {
           <motion.div variants={fadeUpVariants} className="story-content">
             <h4 className="story-label">OUR STORY</h4>
             <h2 className="story-heading">
-              <span className="text-blue">BUILT ON PASSION.</span><br/>
-              <span className="text-gold">DRIVEN BY PURPOSE.</span><br/>
-              <span className="text-blue">DEFINED BY YOU.</span>
+              <span className="text-blue">EVENT MANAGEMENT</span><br/>
+              <span className="text-blue">COMPANY IN INDIA</span>
             </h2>
             
             <div className="story-text-wrapper">
@@ -110,10 +109,10 @@ const OurStory = () => {
               </div>
               
               <p className="story-desc">
-                Kalamaya began with a simple belief—every event has the power to create impact, inspire people, and leave behind memories that last a lifetime.
+                Creating exceptional corporate events, destination weddings, conferences, product launches, dealer meets, and business experiences for over 30 years.
               </p>
               <p className="story-desc">
-                From intimate celebrations to global corporate experiences, our journey has been about one thing: turning your vision into moments that truly matter.
+                Kalamaya is a trusted event management company delivering creative concepts, flawless execution, and memorable experiences across India and international destinations.
               </p>
             </div>
             

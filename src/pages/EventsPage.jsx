@@ -5,6 +5,9 @@ import rightBackground from '../assets/right hero.png';
 import Navbar from '../components/Navbar';
 import OurStory from '../components/OurStory';
 import OurServices from '../components/OurServices';
+import IndustriesWeServe from '../components/IndustriesWeServe';
+import WhyKalamaya from '../components/WhyKalamaya';
+import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
 
 const EventsPage = () => {
@@ -82,7 +85,7 @@ const EventsPage = () => {
                 transition={{ duration: 1, delay: 1 }}
               >
                 <div className="badge-circle">
-                  15+
+                  30+
                 </div>
                 <div className="badge-text">
                   <span className="years-text">YEARS OF CRAFTING</span><br />
@@ -124,6 +127,9 @@ const EventsPage = () => {
       </div>
       <OurStory />
       <OurServices />
+      <IndustriesWeServe />
+      <WhyKalamaya />
+      <CallToAction />
       <Footer />
     </>
   );

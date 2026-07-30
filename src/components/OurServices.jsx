@@ -22,38 +22,38 @@ const servicesData = [
   {
     icon: <IconCorporate />,
     title: "CORPORATE EVENTS",
-    desc: "Conferences, summits, product launches and experiences that elevate your brand.",
+    desc: "Corporate Event Management, Conference & Convention Management, Product Launches, Dealer Meets, and MICE.",
     image: cardCorporate
   },
   {
     icon: <IconWedding />,
-    title: "DESTINATION WEDDINGS",
-    desc: "Bespoke celebrations in breathtaking locations, curated with passion and precision.",
+    title: "WEDDING PLANNING SERVICES",
+    desc: "Destination Weddings in Kerala, Goa & India, Luxury Wedding Management, Decor & Entertainment.",
     image: cardWedding
   },
   {
     icon: <IconSocial />,
-    title: "SOCIAL CELEBRATIONS",
-    desc: "Weddings, engagements, anniversaries and more—crafted around your story.",
-    image: cardWedding
+    title: "HYBRID & VIRTUAL EVENTS",
+    desc: "Seamless digital and hybrid experiences to connect global audiences effectively.",
+    image: cardCorporate
   },
   {
     icon: <IconExpo />,
-    title: "EXHIBITIONS & TRADE SHOWS",
-    desc: "End-to-end solutions that create impact and drive engagement.",
+    title: "EVENT PRODUCTION & TECHNICAL MANAGEMENT",
+    desc: "Top-tier sound, lighting, staging, and technical production for flawless execution.",
     image: cardCorporate
   },
   {
-    icon: <IconEntertainment />,
-    title: "ENTERTAINMENT & ARTIST MANAGEMENT",
-    desc: "Bringing the right talent to make your event unforgettable.",
+    icon: <IconPartners />,
+    title: "MICE & INCENTIVE PROGRAMS",
+    desc: "Curated corporate offsites, reward trips, and international incentive travel programs.",
     image: cardCorporate
   },
   {
-    icon: <IconVenue />,
-    title: "VENUE MANAGEMENT",
-    desc: "Helping you find and manage the perfect venue for every occasion.",
-    image: cardWedding
+    icon: <IconTeam />,
+    title: "GOVERNMENT & PUBLIC EVENTS",
+    desc: "Large-scale public gatherings, government summits, and protocol-driven events.",
+    image: cardCorporate
   }
 ];
 

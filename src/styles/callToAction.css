@@ -1,0 +1,56 @@
+/* callToAction.css */
+.cta-section {
+  padding: 100px 5%;
+  background-color: #F8F3EA; /* Neutral background to bridge to footer */
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #0B2E59;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.cta-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #4A5568;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  background-color: #0B2E59;
+  color: #fff;
+  border: none;
+  padding: 18px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cta-btn:hover {
+  background-color: #082142;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(11, 46, 89, 0.2);
+}
+
+.cta-btn .arrow {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 0;
+}
