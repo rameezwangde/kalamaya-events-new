@@ -1,16 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import eventsLogo from '../assets/events logo.jpeg';
 
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About Kalamaya', path: '/about' },
-  { name: 'Corporate Event Services', path: '/events' },
+  { name: 'Corporate Event Services', path: '/corporate' },
   { name: 'Industries We Serve', path: '#' },
-  { name: 'Destination Weddings', path: '#' },
-  { name: 'Portfolio / Case Studies', path: '#' },
+  { name: 'Destination Weddings', path: '/weddings' },
+  { name: 'Portfolio / Case Studies', path: '/portfolio' },
   { name: 'Locations', path: '#' },
   { name: 'Blog & Insights', path: '#' },
   { name: 'Contact', path: '#' },
@@ -36,8 +36,6 @@ const itemVariants = {
 };
 
 const Navbar = () => {
-  const location = useLocation();
-
   return (
     <motion.nav 
       className="luxury-navbar"
@@ -57,10 +55,13 @@ const Navbar = () => {
         <ul className="nav-links">
           {navItems.map((item, index) => (
             <motion.li key={index} variants={itemVariants}>
-              <Link to={item.path} className={location.pathname === item.path ? 'active' : ''}>
+              <NavLink 
+                to={item.path} 
+                className={({ isActive }) => (isActive && item.path !== '#') ? 'active' : ''}
+              >
                 {item.name}
                 <span className="underline-effect"></span>
-              </Link>
+              </NavLink>
             </motion.li>
           ))}
         </ul>

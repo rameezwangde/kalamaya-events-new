@@ -1,0 +1,111 @@
+/* corporateEventServices.css */
+.corporate-services-section {
+  padding: 100px 5%;
+  background-color: #fff;
+}
+
+.corporate-services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.corporate-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.corporate-heading {
+  font-family: 'Anton', 'Bebas Neue', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  color: #0B2E59;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.title-underline.center {
+  margin: 0 auto 30px auto;
+}
+
+.corporate-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #3A3A3A;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+.corporate-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0B2E59;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.highlight-blue {
+  color: #0B2E59;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Grid layout */
+.corporate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.corporate-card {
+  background-color: #F8F3EA;
+  border: 1px solid rgba(11, 46, 89, 0.05);
+  border-radius: 12px;
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.corporate-card:hover {
+  transform: translateY(-3px);
+  background-color: #0B2E59;
+  box-shadow: 0 10px 20px rgba(11, 46, 89, 0.15);
+}
+
+.corporate-card-inner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.corporate-icon {
+  color: #0B2E59;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.corporate-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0B2E59;
+  transition: color 0.3s ease;
+}
+
+.corporate-card:hover .corporate-icon,
+.corporate-card:hover .corporate-name {
+  color: #F8F3EA;
+}
+
+@media (max-width: 768px) {
+  .corporate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .corporate-grid {
+    grid-template-columns: 1fr;
+  }
+}
