@@ -57,19 +57,19 @@ const Footer = () => {
           <div className="footer-col">
             <h4 className="footer-heading">QUICK LINKS</h4>
             <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Portfolio</a></li>
+              <li><a href="/events">Home</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="#">Blog & Insights</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h4 className="footer-heading">OUR SERVICES</h4>
             <ul className="footer-links">
-              <li><a href="#">Corporate Events</a></li>
-              <li><a href="#">Destination Weddings</a></li>
+              <li><a href="/corporate">Corporate Events</a></li>
+              <li><a href="/weddings">Destination Weddings</a></li>
               <li><a href="#">Social Celebrations</a></li>
               <li><a href="#">Exhibitions & Trade Shows</a></li>
               <li><a href="#">Venue Management</a></li>

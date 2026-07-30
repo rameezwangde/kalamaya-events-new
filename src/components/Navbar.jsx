@@ -5,7 +5,7 @@ import '../styles/navbar.css';
 import eventsLogo from '../assets/events logo.jpeg';
 
 const navItems = [
-  { name: 'Home', path: '/' },
+  { name: 'Home', path: '/events' },
   { name: 'About Kalamaya', path: '/about' },
   { name: 'Corporate Event Services', path: '/corporate' },
   { name: 'Industries We Serve', path: '#' },
