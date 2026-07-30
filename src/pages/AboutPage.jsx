@@ -29,55 +29,51 @@ const AboutPage = () => {
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.h4 variants={fadeUpVariants} className="about-label">OUR LEGACY</motion.h4>
+            <motion.h4 variants={fadeUpVariants} className="about-label text-F8F3EA">ABOUT US</motion.h4>
             <motion.h1 variants={fadeUpVariants} className="about-title">
-              BEYOND EVENTS.<br />
-              <span className="text-gold">WE BUILD MEMORIES.</span>
+              <span>EXPERIENCE.</span><br />
+              <span>CREATIVITY.</span><br />
+              <span>EXECUTION.</span>
             </motion.h1>
-            <motion.p variants={fadeUpVariants} className="about-subtitle">
-              For over a decade, Kalamaya has been at the forefront of luxury event management, transforming ordinary spaces into extraordinary experiences.
-            </motion.p>
           </motion.div>
         </section>
 
-        {/* ABOUT CONTENT */}
-        <section className="about-content-section">
-          <div className="about-container">
+        {/* BLOCKS LAYOUT SECTION */}
+        <section className="about-blocks-section">
+          <div className="about-blocks-container">
             <motion.div 
-              className="about-grid"
+              className="about-blocks-grid"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.2 }}
               variants={staggerContainer}
             >
-              <div className="about-text-col">
-                <motion.h2 variants={fadeUpVariants} className="section-heading text-blue">
-                  A COMMITMENT TO <br/><span className="text-gold">EXCELLENCE</span>
-                </motion.h2>
-                <motion.div variants={fadeUpVariants} className="title-underline"></motion.div>
-                
-                <motion.p variants={fadeUpVariants} className="about-body-text mt-4">
-                  Founded on the belief that every celebration is a unique story waiting to be told, Kalamaya Events India is a collective of passionate creators, meticulous planners, and visionary designers.
-                </motion.p>
-                <motion.p variants={fadeUpVariants} className="about-body-text">
-                  From large-scale corporate summits to intimate luxury destination weddings, our approach remains the same: uncompromising quality, relentless attention to detail, and a deeply personalized touch.
-                </motion.p>
-                
-                <motion.div variants={fadeUpVariants} className="signature-block mt-4">
-                  <p className="signature-font">Kalamaya Leadership</p>
-                </motion.div>
-              </div>
-
-              <motion.div variants={fadeUpVariants} className="about-image-col">
-                <div className="about-image-wrapper">
-                  {/* Using the generated corporate image as a placeholder for the team/about image */}
-                  <img src="/src/assets/services_intro.png" alt="About Kalamaya" className="about-image" />
-                  <div className="experience-badge-floating">
-                    <span className="years">15+</span>
-                    <span className="label">Years of<br/>Excellence</span>
-                  </div>
-                </div>
+              {/* BLOCK 1: Main Text */}
+              <motion.div variants={fadeUpVariants} className="about-block block-text block-main">
+                <h2 className="block-heading text-blue">A LEGACY OF EXCELLENCE</h2>
+                <p className="block-body">
+                  For over three decades, Kalamaya has been helping brands, organizations, and families create impactful events and unforgettable celebrations.
+                </p>
+                <div className="block-divider"></div>
               </motion.div>
+
+              {/* BLOCK 2: Image Block */}
+              <motion.div variants={fadeUpVariants} className="about-block block-image">
+                <img src="/src/assets/luxury_event_wedding.png" alt="Kalamaya Event" className="block-img" />
+              </motion.div>
+
+              {/* BLOCK 3: Secondary Image / Accent */}
+              <motion.div variants={fadeUpVariants} className="about-block block-image-small">
+                <img src="/src/assets/services_intro.png" alt="Event Setup" className="block-img" />
+              </motion.div>
+
+              {/* BLOCK 4: Highlight Text */}
+              <motion.div variants={fadeUpVariants} className="about-block block-text block-highlight">
+                <p className="block-body-large text-F8F3EA">
+                  From corporate conferences to destination weddings, we bring together strategy, creativity, technology, and flawless event management.
+                </p>
+              </motion.div>
+
             </motion.div>
           </div>
         </section>
