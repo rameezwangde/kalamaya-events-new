@@ -1,10 +1,10 @@
-/* industriesWeServe.css */
-.industries-section {
+/* locations.css */
+.locations-section {
   padding: 80px 5%;
-  background-color: #F8F3EA; /* Or white, but keep it consistent with the overall theme */
+  background-color: #F8F3EA;
 }
 
-.industries-container {
+.locations-container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -17,7 +17,7 @@
   margin-bottom: 50px;
 }
 
-.industries-description {
+.locations-description {
   max-width: 800px;
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
@@ -27,13 +27,13 @@
   text-align: center;
 }
 
-.industries-grid {
+.locations-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.industry-card {
+.location-card {
   background-color: #fff;
   border: 1px solid rgba(11, 46, 89, 0.1);
   padding: 30px 20px;
@@ -46,15 +46,15 @@
   justify-content: center;
 }
 
-.industry-card:hover {
+.location-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(11, 46, 89, 0.08);
   border-color: rgba(11, 46, 89, 0.3);
 }
 
-.industry-name {
+.location-name {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #0B2E59;
   letter-spacing: 0.5px;
@@ -63,19 +63,19 @@
 }
 
 @media (max-width: 992px) {
-  .industries-grid {
+  .locations-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .industries-grid {
+  .locations-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
-  .industries-grid {
+  .locations-grid {
     grid-template-columns: 1fr;
   }
 }

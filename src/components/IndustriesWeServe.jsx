@@ -3,14 +3,23 @@ import { motion } from 'framer-motion';
 import '../styles/industriesWeServe.css';
 
 const industries = [
-  "Healthcare",
-  "IT & Technology",
-  "Manufacturing",
-  "Automobile",
-  "Education",
-  "Government",
-  "FMCG",
-  "Retail"
+  "Healthcare & Pharmaceuticals",
+  "Information Technology (IT) & Software",
+  "Banking, Financial Services & Insurance (BFSI)",
+  "Automobile & Mobility",
+  "Manufacturing & Industrial",
+  "FMCG & Consumer Brands",
+  "Retail & E-commerce",
+  "Real Estate & Infrastructure",
+  "Education & Universities",
+  "Government & Public Sector",
+  "Hospitality & Tourism",
+  "Telecom & Technology",
+  "Energy & Utilities",
+  "Media & Entertainment",
+  "Startups & Emerging Businesses",
+  "Trade Associations & Professional Bodies",
+  "NGOs & Non-Profit Organizations"
 ];
 
 const containerVariants = {
@@ -28,7 +37,7 @@ const itemVariants = {
 
 const IndustriesWeServe = () => {
   return (
-    <section className="industries-section">
+    <section id="industries-we-serve" className="industries-section">
       <div className="industries-container">
         <motion.div 
           className="section-title-wrapper center-title"
@@ -39,6 +48,9 @@ const IndustriesWeServe = () => {
         >
           <h3 className="section-title">INDUSTRIES WE SERVE</h3>
           <div className="title-underline"></div>
+          <p className="industries-description">
+            From healthcare conferences and pharmaceutical launches to automobile dealer meets, technology summits, government events, and destination weddings, Kalamaya delivers customized event solutions across industries and sectors.
+          </p>
         </motion.div>
 
         <motion.div 

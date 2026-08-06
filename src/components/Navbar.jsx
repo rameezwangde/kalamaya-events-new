@@ -8,11 +8,11 @@ const navItems = [
   { name: 'Home', path: '/events' },
   { name: 'About Kalamaya', path: '/about' },
   { name: 'Corporate Event Services', path: '/corporate' },
-  { name: 'Industries We Serve', path: '#' },
+  { name: 'Industries We Serve', path: '/industries' },
   { name: 'Destination Weddings', path: '/weddings' },
   { name: 'Portfolio / Case Studies', path: '/portfolio' },
-  { name: 'Locations', path: '#' },
-  { name: 'Blog & Insights', path: '#' },
+  { name: 'Locations', path: '/locations' },
+  { name: 'Blog & Insights', path: '/blogs' },
   { name: 'Contact', path: '/contact' },
 ];
 

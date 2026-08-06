@@ -5,7 +5,6 @@ import rightBackground from '../assets/right hero.png';
 import Navbar from '../components/Navbar';
 import OurStory from '../components/OurStory';
 import OurServices from '../components/OurServices';
-import IndustriesWeServe from '../components/IndustriesWeServe';
 import WhyKalamaya from '../components/WhyKalamaya';
 import CallToAction from '../components/CallToAction';
 import Footer from '../components/Footer';
@@ -127,7 +126,6 @@ const EventsPage = () => {
       </div>
       <OurStory />
       <OurServices />
-      <IndustriesWeServe />
       <WhyKalamaya />
       <CallToAction />
       <Footer />
