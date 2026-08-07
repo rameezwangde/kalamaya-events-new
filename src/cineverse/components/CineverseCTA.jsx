@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CineverseCTA = () => {
   return (
-    <section className="relative w-full bg-[#EAE6DF] text-[#090706] overflow-hidden border-t border-black/5" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
+    <section className="relative w-full bg-[#050505] text-[#EAE6DF] overflow-hidden" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
       <div className="max-w-[1440px] mx-auto w-full flex flex-col items-center" style={{ paddingInline: 'clamp(32px, 5vw, 80px)' }}>
 
         <motion.div
@@ -19,18 +19,18 @@ const CineverseCTA = () => {
           <span className="text-brand-red uppercase tracking-[0.4em] text-xs font-bold mb-8 relative z-10">Collaborate</span>
 
           <h2 
-            className="leading-[0.9] text-transparent bg-clip-text bg-gradient-to-b from-[#090706] to-[#555] pb-6"
+            className="leading-[0.9] text-[#EAE6DF] pb-6"
             style={{ fontSize: 'clamp(48px, 8vw, 120px)', fontFamily: '"Druk Condensed Super", "Druk Condensed", "Bebas Neue", sans-serif', letterSpacing: '0.02em' }}
           >
             READY TO BRING YOUR<br/>
             <span className="text-brand-red">VISION</span> TO LIFE?
           </h2>
           
-          <p className="relative z-10 text-[#444] text-lg md:text-2xl font-light max-w-2xl mx-auto mb-16 leading-relaxed">
+          <p className="relative z-10 text-[#EAE6DF] text-lg md:text-2xl font-light max-w-2xl mx-auto mb-16 leading-relaxed">
             Let's collaborate to create powerful narratives that leave a lasting impact.
           </p>
 
-          <button className="relative z-10 inline-flex items-center justify-center gap-4 border border-brand-red rounded-full text-brand-red uppercase tracking-[0.2em] text-[11px] md:text-xs font-bold hover:bg-brand-red hover:text-white transition-all duration-500 group" style={{ padding: '20px 48px' }}>
+          <button className="relative z-10 inline-flex items-center justify-center gap-4 border border-[#EAE6DF] rounded-full text-[#EAE6DF] uppercase tracking-[0.2em] text-[11px] md:text-xs font-bold hover:bg-[#EAE6DF] hover:text-[#050505] transition-all duration-500 group" style={{ padding: '20px 48px' }}>
             <span>START A PROJECT</span>
             <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform duration-500" />
           </button>

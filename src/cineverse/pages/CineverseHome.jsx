@@ -2,6 +2,7 @@ import React from 'react';
 import CineverseNavbar from '../components/CineverseNavbar';
 import CineverseHero from '../components/CineverseHero';
 import CineverseIntro from '../components/CineverseIntro';
+import CineverseWhoWeAre from '../components/CineverseWhoWeAre';
 import CineverseTestimonials from '../components/CineverseTestimonials';
 import CineverseCTA from '../components/CineverseCTA';
 import CineverseFooter from '../components/CineverseFooter';
@@ -13,6 +14,7 @@ const CineverseHome = () => {
       <CineverseNavbar />
       <CineverseHero />
       <CineverseIntro />
+      <CineverseWhoWeAre />
       <CineverseTestimonials />
       <CineverseCTA />
       <CineverseFooter />
