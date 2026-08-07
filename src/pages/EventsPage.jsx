@@ -103,7 +103,7 @@ const EventsPage = () => {
           >
             <div
               className="right-image"
-              style={{ backgroundImage: `url("${rightBackground}")` }}
+              style={{ backgroundImage: `url("https://res.cloudinary.com/crw5jo8x/image/upload/v1786130942/AF6I0079_sx1akd.jpg")` }}
             ></div>
             <div className="image-overlay"></div>
           </motion.div>

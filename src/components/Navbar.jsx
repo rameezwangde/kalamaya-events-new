@@ -37,7 +37,7 @@ const itemVariants = {
 
 const Navbar = () => {
   return (
-    <motion.nav 
+    <motion.nav
       className="luxury-navbar"
       initial="hidden"
       animate="visible"
@@ -46,17 +46,17 @@ const Navbar = () => {
       <div className="nav-container">
         {/* LOGO */}
         <div className="nav-logo">
-           <Link to="/">
-             <img src={eventsLogo} alt="Kalamaya Events" className="nav-img-logo" />
-           </Link>
+          <Link to="/">
+            <img src={eventsLogo} alt="Kalamaya Events" className="nav-img-logo" />
+          </Link>
         </div>
-        
+
         {/* LINKS */}
         <ul className="nav-links">
           {navItems.map((item, index) => (
             <motion.li key={index} variants={itemVariants}>
-              <NavLink 
-                to={item.path} 
+              <NavLink
+                to={item.path}
                 className={({ isActive }) => (isActive && item.path !== '#') ? 'active' : ''}
               >
                 {item.name}
@@ -65,7 +65,7 @@ const Navbar = () => {
             </motion.li>
           ))}
         </ul>
-        
+
         {/* CTA */}
         <motion.div className="nav-cta-wrapper" variants={itemVariants}>
           <button className="nav-cta">

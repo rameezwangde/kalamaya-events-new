@@ -1,7 +1,8 @@
 /* callToAction.css */
 .cta-section {
   padding: 100px 5%;
-  background-color: #F8F3EA; /* Neutral background to bridge to footer */
+  background-color: #F8F3EA;
+  /* Neutral background to bridge to footer */
   text-align: center;
 }
 

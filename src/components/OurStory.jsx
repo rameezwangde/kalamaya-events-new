@@ -86,7 +86,7 @@ const slideLeftVariants = {
 const OurStory = () => {
   return (
     <section className="our-story-section">
-      <motion.div 
+      <motion.div
         className="story-container"
         initial="hidden"
         whileInView="visible"
@@ -98,16 +98,16 @@ const OurStory = () => {
           <motion.div variants={fadeUpVariants} className="story-content">
             <h4 className="story-label">OUR STORY</h4>
             <h2 className="story-heading">
-              <span className="text-blue">EVENT MANAGEMENT</span><br/>
+              <span className="text-blue">EVENT MANAGEMENT</span><br />
               <span className="text-blue">COMPANY IN INDIA</span>
             </h2>
-            
+
             <div className="story-text-wrapper">
               {/* Decorative dots matching hero */}
               <div className="story-dots">
                 {[...Array(16)].map((_, i) => <div key={i} className="story-dot"></div>)}
               </div>
-              
+
               <p className="story-desc">
                 Creating exceptional corporate events, destination weddings, conferences, product launches, dealer meets, and business experiences for over 30 years.
               </p>
@@ -115,10 +115,10 @@ const OurStory = () => {
                 Kalamaya is a trusted event management company delivering creative concepts, flawless execution, and memorable experiences across India and international destinations.
               </p>
             </div>
-            
+
             <motion.div variants={fadeUpVariants} className="story-signature-block">
               <div className="signature-font">Kalamaya Team</div>
-              <p className="signature-subtext">Crafting Experiences.<br/>Creating Legacies.</p>
+              <p className="signature-subtext">Crafting Experiences.<br />Creating Legacies.</p>
             </motion.div>
           </motion.div>
         </div>
