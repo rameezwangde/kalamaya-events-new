@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage'
 import IndustriesPage from './pages/IndustriesPage'
 import LocationsPage from './pages/LocationsPage'
 import BlogsPage from './pages/BlogsPage'
+import CineverseHome from './cineverse/pages/CineverseHome'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/weddings" element={<WeddingPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/cineverse/*" element={<CineverseHome />} />
       </Routes>
     </Router>
   )

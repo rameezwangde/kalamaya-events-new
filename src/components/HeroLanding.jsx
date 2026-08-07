@@ -68,7 +68,7 @@ const LightLanding = ({ theme, setTheme }) => {
 
       <section className="light-landing__right-content" aria-label="Explore Kalamaya Cineverse">
         <p>FILMS THAT <strong>INSPIRE.</strong><br />STORIES THAT <strong>STAY.</strong></p>
-        <AngularButton tone="red">EXPLORE CINEVERSE</AngularButton>
+        <AngularButton tone="red" onClick={() => navigate('/cineverse')}>EXPLORE CINEVERSE</AngularButton>
       </section>
 
       <div className="light-landing__center-label">
@@ -107,7 +107,7 @@ const DarkLanding = ({ theme, setTheme }) => {
         <div className="top-right-logo"><img src={cineverseLogo} alt="Kalamaya Cineverse" className="center-logo cineverse-logo" /></div>
         <div className="bottom-content right-content">
           <h2 className="headline">FILMS THAT <span className="highlight-red">INSPIRE.</span><br />STORIES THAT <span className="highlight-red">STAY.</span></h2>
-          <button className="btn btn-red">EXPLORE CINEVERSE <span className="arrow">&#x2197;</span></button>
+          <button className="btn btn-red" onClick={() => navigate('/cineverse')}>EXPLORE CINEVERSE <span className="arrow">&#x2197;</span></button>
         </div>
       </div>
       <img src="/ring.png" alt="" aria-hidden="true" className="hero-energy-ring" />
