@@ -7,7 +7,8 @@ const CineverseHero = () => {
     <section className="relative w-full min-h-[100svh] flex items-center overflow-hidden bg-[#050505]">
       {/* Right Side Background Image */}
       <motion.div 
-        className="absolute inset-0 z-0 flex justify-end pointer-events-none"
+        className="absolute left-0 right-0 bottom-0 z-0 flex justify-end pointer-events-none"
+        style={{ top: '90px' }}
         initial={{ scale: 1.04 }}
         animate={{ scale: 1 }}
         transition={{ duration: 1.8, ease: 'easeOut' }}
@@ -15,7 +16,7 @@ const CineverseHero = () => {
         <img
           src={rightSideImage}
           alt="Cineverse Right Visual"
-          className="w-full md:w-[54%] h-full object-cover object-[center_right]"
+          className="w-full md:w-[60%] h-full object-cover object-[right_top]"
         />
       </motion.div>
       
