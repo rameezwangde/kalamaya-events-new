@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import CineverseNavbar from '../components/CineverseNavbar';
+import CineverseFooter from '../components/CineverseFooter';
 import '../cineverse.css';
 
 const CineverseContact = () => {
@@ -168,6 +169,7 @@ const CineverseContact = () => {
           </div>
         </section>
       </main>
+      <CineverseFooter />
     </div>
   );
 };
