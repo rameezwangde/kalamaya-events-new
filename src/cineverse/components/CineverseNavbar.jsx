@@ -68,11 +68,17 @@ const CineverseNavbar = () => {
           })}
         </div>
 
-        {/* Right: Hamburger */}
+        {/* Right: Exit to Landing */}
         <div className="flex-shrink-0 flex items-center justify-end">
-          <button className="text-white z-50 p-3 rounded-full border border-white/20 hover:bg-white/10 transition-colors">
-            <Menu size={20} />
-          </button>
+          <Link 
+            to="/"
+            className="text-white z-50 px-5 py-2.5 rounded-full border border-white/20 hover:bg-white/10 hover:border-white/40 transition-all duration-300 flex items-center gap-2 group"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform duration-300">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            <span className="uppercase text-[11px] font-bold tracking-[0.1em]">Main Menu</span>
+          </Link>
         </div>
         
       </div>
