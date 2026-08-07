@@ -14,9 +14,10 @@ import CineverseHome from './cineverse/pages/CineverseHome'
 import CineverseAbout from './cineverse/pages/CineverseAbout'
 import CineverseFilms from './cineverse/pages/CineverseFilms'
 import CineverseProductions from './cineverse/pages/CineverseProductions'
+import CineverseFestivals from './cineverse/pages/CineverseFestivals'
 import CineverseNews from './cineverse/pages/CineverseNews'
 
-// Force HMR reload
+// Force HMR reload again
 function App() {
   return (
     <Router>
@@ -36,6 +37,7 @@ function App() {
         <Route path="/cineverse/about" element={<CineverseAbout />} />
         <Route path="/cineverse/films" element={<CineverseFilms />} />
         <Route path="/cineverse/productions" element={<CineverseProductions />} />
+        <Route path="/cineverse/festivals" element={<CineverseFestivals />} />
         <Route path="/cineverse/news" element={<CineverseNews />} />
       </Routes>
     </Router>
