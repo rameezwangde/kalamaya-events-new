@@ -34,12 +34,14 @@ const CineverseAbout = () => {
               <span className="text-brand-red">AUDIENCES EVERYWHERE.</span>
             </h1>
 
-            <p className="text-[#333] text-lg md:text-2xl font-light leading-relaxed mb-8">
-              <span className="font-bold text-brand-red">Kalamaya Cineverse</span> was founded with a simple belief: great stories can emerge from anywhere and connect with audiences everywhere.
-            </p>
-            <p className="text-[#555] text-base md:text-xl font-light leading-relaxed">
-              Backed by over three decades of experience in events, media, television, marketing and entertainment, Kalamaya Cineverse develops and produces films that celebrate authentic voices, meaningful characters and culturally rooted storytelling.
-            </p>
+            <div className="text-[#333] text-lg md:text-2xl font-light leading-relaxed mb-8">
+              <p className="mb-4">
+                From these humble yet powerful beginnings, we have evolved into a leading <strong className="text-brand-red font-bold">South Indian Film Production House</strong>. Our deep cultural roots allow us to excel as a <strong className="text-brand-red font-bold">Malayalam Film Production Company</strong> and a premier <strong className="text-brand-red font-bold">Tamil Film Production Company</strong>, bridging authentic regional narratives with universal themes. 
+              </p>
+              <p>
+                While we stand proud among the top <strong className="text-brand-red font-bold">Film Producers in Kerala</strong> and Tamil Nadu, our ambition knows no borders. Today, Kalamaya Cineverse is synonymous with independent cinematic excellence on a global stage, producing films that celebrate authentic voices, meaningful characters and culturally rooted storytelling.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>

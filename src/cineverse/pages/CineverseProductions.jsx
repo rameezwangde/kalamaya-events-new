@@ -45,7 +45,7 @@ const CineverseProductions = () => {
 
             <div className="w-full flex justify-center">
               <p className="text-[#bbb] text-lg md:text-2xl font-light max-w-3xl text-center leading-relaxed">
-                Show all current and upcoming projects. This section is designed to grow as Kalamaya Cineverse expands its storytelling across different formats.
+                Showcasing our premier Feature Film Production slate, exclusive OTT Content Production, and expansive co-production ventures, including our role as a trusted Netflix Partner Film Production studio.
               </p>
             </div>
           </motion.div>

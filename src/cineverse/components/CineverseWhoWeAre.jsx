@@ -47,8 +47,8 @@ const CineverseWhoWeAre = () => {
             <p className="text-base md:text-lg font-light text-[#888] leading-relaxed">
               Our filmography balances artistic integrity with global commercial appeal. From critically acclaimed theatrical releases to premium OTT streaming content and international film festival selections, we bridge the gap between authentic local voices and the global stage. 
             </p>
-            <p className="text-base md:text-lg font-light text-[#888] leading-relaxed">
-              At Kalamaya Cineverse, we don't just produce films—we forge lasting collaborations with visionary creators, distributors, and audiences. Every film begins with a story worth telling.
+            <p className="text-[#888] font-light text-lg md:text-2xl leading-relaxed max-w-2xl">
+              As a premier Film Production Company in India, Kalamaya Cineverse is a visionary Independent Film Studio in India dedicated to crafting raw, powerful, and visually stunning cinematic experiences.
             </p>
           </div>
         </motion.div>

@@ -92,7 +92,7 @@ const CineverseFestivals = () => {
 
             <div className="w-full flex justify-center">
               <p className="text-[#bbb] text-lg md:text-2xl font-light max-w-3xl text-center leading-relaxed">
-                Explore our global footprint. An interactive map tracking Kalamaya Cineverse’s official selections, premieres, and awards across the world.
+                Explore the global journey of our International Film Festival Films. From Istanbul to Los Angeles, our stories are resonating with audiences and critics around the world.
               </p>
             </div>
           </motion.div>

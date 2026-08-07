@@ -79,7 +79,7 @@ const CineverseCollaborate = () => {
           <CollabCard 
             category="Creative"
             title="For Filmmakers"
-            description="Pitch your story, screenplay or project. We empower visionary creators to bring their cinematic ideas to life."
+            description="Pitch your story, screenplay or project. We empower visionary creators to partner with a leading Regional Cinema Production House to bring their cinematic ideas to life."
             buttonText="Submit Pitch"
             delay={0}
           />
@@ -95,7 +95,7 @@ const CineverseCollaborate = () => {
           <CollabCard 
             category="Distribution"
             title="For Distributors"
-            description="Request screener access and business discussions to bring Kalamaya Cineverse titles to your markets and platforms."
+            description="Request screener access and business discussions. Explore premium Film Distribution India partnerships to bring Kalamaya Cineverse titles to your markets and platforms."
             buttonText="Request Access"
             delay={0.4}
           />
