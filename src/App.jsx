@@ -20,7 +20,9 @@ import CineverseCollaborate from './cineverse/pages/CineverseCollaborate'
 import CineverseTeam from './cineverse/pages/CineverseTeam'
 import CineverseContact from './cineverse/pages/CineverseContact'
 
-// Force HMR reload again
+// Force HMR reload for Contact page redesign
+console.log("Contact page redesigned, forcing HMR reload...");
+
 function App() {
   return (
     <Router>
