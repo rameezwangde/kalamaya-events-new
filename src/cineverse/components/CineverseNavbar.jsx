@@ -17,7 +17,7 @@ const CineverseNavbar = () => {
   }, []);
 
   const navLinks = [
-    'HOME', 'ABOUT US', 'FILMS', 'PRODUCTIONS', 'FESTIVALS', 'NEWS', 'SERVICES', 'TEAM', 'CONTACT'
+    'HOME', 'ABOUT US', 'FILMS', 'PRODUCTIONS', 'NEWS', 'FESTIVALS', 'SERVICES', 'TEAM', 'CONTACT'
   ];
 
   return (
