@@ -52,9 +52,9 @@ const CineverseNavbar = () => {
               >
                 {link}
                 {isActive ? (
-                  <span className="absolute bottom-1 left-0 h-[2px] bg-brand-red w-full"></span>
+                  <span className="absolute bottom-0 left-0 h-[2px] bg-brand-red w-full"></span>
                 ) : (
-                  <span className="absolute bottom-1 left-0 h-[2px] bg-brand-red transition-all duration-300 w-0 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 h-[2px] bg-brand-red transition-all duration-300 w-0 group-hover:w-full"></span>
                 )}
               </Link>
             );
