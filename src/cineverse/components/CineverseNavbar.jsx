@@ -46,7 +46,8 @@ const CineverseNavbar = () => {
             const isNews = link === 'NEWS';
             const isCollaborate = link === 'COLLABORATE';
             const isTeam = link === 'TEAM';
-            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : (isProductions ? '/cineverse/productions' : (isFestivals ? '/cineverse/festivals' : (isNews ? '/cineverse/news' : (isCollaborate ? '/cineverse/collaborate' : (isTeam ? '/cineverse/team' : '#')))))));
+            const isContact = link === 'CONTACT';
+            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : (isProductions ? '/cineverse/productions' : (isFestivals ? '/cineverse/festivals' : (isNews ? '/cineverse/news' : (isCollaborate ? '/cineverse/collaborate' : (isTeam ? '/cineverse/team' : (isContact ? '/cineverse/contact' : '#'))))))));
             const isActive = location.pathname === path;
             
             return (
