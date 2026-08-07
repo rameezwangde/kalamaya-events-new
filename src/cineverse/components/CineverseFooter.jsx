@@ -16,7 +16,7 @@ const CineverseFooter = () => {
   };
 
   const socialLinks = ["Instagram", "LinkedIn", "Vimeo", "YouTube"];
-  const quickLinks = ["Home", "About Us", "Films", "Productions", "News", "Festivals", "Services", "Team", "Contact"];
+  const quickLinks = ["Home", "About Us", "Films", "Productions", "News", "Festivals", "Collaborate", "Services", "Team", "Contact"];
 
   return (
     <footer className="relative w-full bg-[#050505] overflow-hidden border-t border-white/5" style={{ paddingTop: '120px', paddingBottom: '48px' }}>
