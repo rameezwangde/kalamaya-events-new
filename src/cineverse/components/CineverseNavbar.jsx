@@ -45,7 +45,8 @@ const CineverseNavbar = () => {
             const isFestivals = link === 'FESTIVALS';
             const isNews = link === 'NEWS';
             const isCollaborate = link === 'COLLABORATE';
-            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : (isProductions ? '/cineverse/productions' : (isFestivals ? '/cineverse/festivals' : (isNews ? '/cineverse/news' : (isCollaborate ? '/cineverse/collaborate' : '#'))))));
+            const isTeam = link === 'TEAM';
+            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : (isProductions ? '/cineverse/productions' : (isFestivals ? '/cineverse/festivals' : (isNews ? '/cineverse/news' : (isCollaborate ? '/cineverse/collaborate' : (isTeam ? '/cineverse/team' : '#')))))));
             const isActive = location.pathname === path;
             
             return (
