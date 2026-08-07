@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu } from 'lucide-react';
 import cineverseLogo from '../../assets/cineverse logo transparent.png';
 
 const CineverseNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,21 +37,28 @@ const CineverseNavbar = () => {
         
         {/* Center: Links */}
         <div className="hidden xl:flex items-center h-full" style={{ gap: 'clamp(28px, 2.5vw, 36px)' }}>
-          {navLinks.map((link) => (
-            <a 
-              key={link} 
-              href="#"
-              className={`uppercase transition-colors relative group py-2 ${link === 'HOME' ? 'text-brand-red' : 'text-[#a0a0a0] hover:text-white'}`}
-              style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.12em' }}
-            >
-              {link}
-              {link === 'HOME' ? (
-                <span className="absolute bottom-1 left-0 h-[2px] bg-brand-red w-full"></span>
-              ) : (
-                <span className="absolute bottom-1 left-0 h-[2px] bg-brand-red transition-all duration-300 w-0 group-hover:w-full"></span>
-              )}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const isHome = link === 'HOME';
+            const isAbout = link === 'ABOUT US';
+            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : '#');
+            const isActive = location.pathname === path;
+            
+            return (
+              <Link 
+                key={link} 
+                to={path}
+                className={`uppercase transition-colors relative group py-2 ${isActive ? 'text-brand-red' : 'text-[#a0a0a0] hover:text-white'}`}
+                style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.12em' }}
+              >
+                {link}
+                {isActive ? (
+                  <span className="absolute bottom-1 left-0 h-[2px] bg-brand-red w-full"></span>
+                ) : (
+                  <span className="absolute bottom-1 left-0 h-[2px] bg-brand-red transition-all duration-300 w-0 group-hover:w-full"></span>
+                )}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Right: Hamburger */}

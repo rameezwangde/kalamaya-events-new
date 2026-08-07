@@ -11,6 +11,7 @@ import IndustriesPage from './pages/IndustriesPage'
 import LocationsPage from './pages/LocationsPage'
 import BlogsPage from './pages/BlogsPage'
 import CineverseHome from './cineverse/pages/CineverseHome'
+import CineverseAbout from './cineverse/pages/CineverseAbout'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         <Route path="/weddings" element={<WeddingPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/cineverse/*" element={<CineverseHome />} />
+        <Route path="/cineverse" element={<CineverseHome />} />
+        <Route path="/cineverse/about" element={<CineverseAbout />} />
       </Routes>
     </Router>
   )
