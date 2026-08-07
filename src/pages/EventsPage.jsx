@@ -27,11 +27,6 @@ const EventsPage = () => {
 
           {/* LEFT PANEL */}
           <div className="hero-left">
-            {/* Subtle decorative contour/dots */}
-            <div className="dots-decoration">
-              {[...Array(20)].map((_, i) => <div key={i} className="dot"></div>)}
-            </div>
-
             <div className="left-content">
               <motion.p
                 className="small-label"
@@ -107,21 +102,6 @@ const EventsPage = () => {
             ></div>
             <div className="image-overlay"></div>
           </motion.div>
-
-          {/* SCROLL INDICATOR */}
-          <div className="scroll-indicator-wrapper">
-            <motion.div
-              className="scroll-mouse"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            >
-              <div className="mouse-outline">
-                <div className="mouse-dot"></div>
-              </div>
-              <span className="scroll-text">SCROLL TO EXPLORE</span>
-              <span className="scroll-arrow">&#x2304;</span>
-            </motion.div>
-          </div>
         </section>
       </div>
       <OurStory />
