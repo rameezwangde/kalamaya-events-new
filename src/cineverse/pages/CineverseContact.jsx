@@ -100,6 +100,22 @@ const CineverseContact = () => {
           .contact-submit-btn:hover {
             background-color: #090706;
           }
+          .contact-form-input {
+            width: 100%;
+            background-color: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 14px 16px;
+            color: #090706;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            outline: none;
+            border-radius: 4px;
+            margin-top: 8px;
+          }
+          .contact-form-input:focus {
+            border-color: #d32027;
+            box-shadow: 0 0 0 1px #d32027;
+          }
         `}</style>
         
         <div className="contact-container">
@@ -213,7 +229,7 @@ const CineverseContact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="bg-transparent border-b border-[#00000033] pb-2 text-[#090706] text-lg focus:outline-none focus:border-brand-red transition-colors duration-300"
+                      className="contact-form-input"
                     />
                   </div>
 
@@ -226,7 +242,7 @@ const CineverseContact = () => {
                       name="organisation" 
                       value={formData.organisation}
                       onChange={handleChange}
-                      className="bg-transparent border-b border-[#00000033] pb-2 text-[#090706] text-lg focus:outline-none focus:border-brand-red transition-colors duration-300"
+                      className="contact-form-input"
                     />
                   </div>
 
@@ -240,7 +256,7 @@ const CineverseContact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="bg-transparent border-b border-[#00000033] pb-2 text-[#090706] text-lg focus:outline-none focus:border-brand-red transition-colors duration-300"
+                      className="contact-form-input"
                     />
                   </div>
 
@@ -254,7 +270,7 @@ const CineverseContact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="bg-transparent border-b border-[#00000033] pb-2 text-[#090706] text-lg focus:outline-none focus:border-brand-red transition-colors duration-300"
+                      className="contact-form-input"
                     />
                   </div>
                 </div>
@@ -269,7 +285,7 @@ const CineverseContact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="bg-transparent border-b border-[#00000033] pb-2 text-[#090706] text-lg focus:outline-none focus:border-brand-red transition-colors duration-300"
+                    className="contact-form-input"
                   />
                 </div>
 
@@ -283,7 +299,7 @@ const CineverseContact = () => {
                     onChange={handleChange}
                     required
                     rows="6"
-                    className="bg-transparent border-b border-[#00000033] pb-2 text-[#090706] text-lg focus:outline-none focus:border-brand-red transition-colors duration-300 resize-none"
+                    className="contact-form-input resize-none"
                   ></textarea>
                 </div>
 
