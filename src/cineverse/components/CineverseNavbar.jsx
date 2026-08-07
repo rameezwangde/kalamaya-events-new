@@ -40,7 +40,8 @@ const CineverseNavbar = () => {
           {navLinks.map((link) => {
             const isHome = link === 'HOME';
             const isAbout = link === 'ABOUT US';
-            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : '#');
+            const isFilms = link === 'FILMS';
+            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : '#'));
             const isActive = location.pathname === path;
             
             return (
