@@ -37,15 +37,17 @@ const CineverseProductions = () => {
             className="w-full"
           >
             <h1 
-              className="uppercase leading-[0.9] mb-12 text-white"
+              className="uppercase leading-[0.9] mb-12 text-white text-center w-full"
               style={{ fontSize: 'clamp(64px, 12vw, 180px)', fontFamily: '"Druk Condensed Super", "Druk Condensed", "Bebas Neue", sans-serif', letterSpacing: '0.02em' }}
             >
               PRODUCTIONS
             </h1>
 
-            <p className="text-[#bbb] text-lg md:text-2xl font-light max-w-3xl mx-auto leading-relaxed">
-              Show all current and upcoming projects. This section is designed to grow as Kalamaya Cineverse expands its storytelling across different formats.
-            </p>
+            <div className="w-full flex justify-center">
+              <p className="text-[#bbb] text-lg md:text-2xl font-light max-w-3xl text-center leading-relaxed">
+                Show all current and upcoming projects. This section is designed to grow as Kalamaya Cineverse expands its storytelling across different formats.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
