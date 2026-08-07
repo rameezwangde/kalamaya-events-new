@@ -17,7 +17,7 @@ const CineverseNavbar = () => {
   }, []);
 
   const navLinks = [
-    'HOME', 'ABOUT US', 'FILMS', 'OUR WORK', 'SERVICES', 'TEAM', 'CONTACT'
+    'HOME', 'ABOUT US', 'FILMS', 'PRODUCTIONS', 'SERVICES', 'TEAM', 'CONTACT'
   ];
 
   return (
@@ -41,7 +41,8 @@ const CineverseNavbar = () => {
             const isHome = link === 'HOME';
             const isAbout = link === 'ABOUT US';
             const isFilms = link === 'FILMS';
-            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : '#'));
+            const isProductions = link === 'PRODUCTIONS';
+            const path = isHome ? '/cineverse' : (isAbout ? '/cineverse/about' : (isFilms ? '/cineverse/films' : (isProductions ? '/cineverse/productions' : '#')));
             const isActive = location.pathname === path;
             
             return (

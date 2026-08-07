@@ -13,6 +13,7 @@ import BlogsPage from './pages/BlogsPage'
 import CineverseHome from './cineverse/pages/CineverseHome'
 import CineverseAbout from './cineverse/pages/CineverseAbout'
 import CineverseFilms from './cineverse/pages/CineverseFilms'
+import CineverseProductions from './cineverse/pages/CineverseProductions'
 
 // Force HMR reload
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/cineverse" element={<CineverseHome />} />
         <Route path="/cineverse/about" element={<CineverseAbout />} />
         <Route path="/cineverse/films" element={<CineverseFilms />} />
+        <Route path="/cineverse/productions" element={<CineverseProductions />} />
       </Routes>
     </Router>
   )
