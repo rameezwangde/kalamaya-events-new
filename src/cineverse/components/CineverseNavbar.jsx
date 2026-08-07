@@ -25,7 +25,7 @@ const CineverseNavbar = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#050505]/80 backdrop-blur-md shadow-lg border-b border-white/5' : 'bg-transparent'}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#050505] ${scrolled ? 'shadow-lg border-b border-white/5' : 'border-b border-transparent'}`}
       style={{ height: '90px' }}
     >
       <div className="w-full max-w-[1440px] mx-auto h-full flex justify-between items-center" style={{ paddingInline: 'clamp(32px, 5vw, 80px)' }}>
