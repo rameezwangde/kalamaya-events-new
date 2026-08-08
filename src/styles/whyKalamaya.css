@@ -1,61 +1,149 @@
-/* whyKalamaya.css */
+/* ===================================================================
+   whyKalamaya.css — Beige editorial stat strip
+   =================================================================== */
+
 .why-section {
-  padding: 80px 5%;
-  background-color: #0B2E59;
-  /* Navy blue background to contrast with the beige sections */
-  color: #fff;
+  width: 100%;
+  background: #F8F3EA;
+  padding: clamp(70px, 9vh, 120px) 0;
 }
 
 .why-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 0 clamp(24px, 5vw, 80px);
 }
 
-.why-section .section-title {
-  color: #fff;
-}
+/* ---- Header ---- */
 
-.why-section .title-underline {
-  background-color: #fff;
-}
-
-.reasons-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.reason-card {
-  flex: 1 1 300px;
-  max-width: 350px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 40px 30px;
-  border-radius: 16px;
+.why-header {
   text-align: center;
-  transition: all 0.4s ease;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: clamp(40px, 5vh, 70px);
 }
 
-.reason-card:hover {
-  transform: translateY(-10px);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
-  border-color: rgba(200, 161, 90, 0.5);
-  box-shadow: 0 15px 40px rgba(200, 161, 90, 0.15);
-}
-
-.reason-icon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.reason-title {
+.why-eyebrow {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(0.7rem, 0.8vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0B2E59;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.why-heading {
+  font-family: 'Oswald', 'Impact', sans-serif;
+  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0B2E59;
+  text-transform: uppercase;
+}
+
+/* ---- Stat Strip ---- */
+
+.why-strip {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  border-top: 1px solid rgba(11, 46, 89, 0.12);
+  border-bottom: 1px solid rgba(11, 46, 89, 0.12);
+}
+
+.why-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(30px, 4vh, 50px) clamp(12px, 2vw, 30px);
+  position: relative;
+}
+
+/* Vertical divider between stats */
+.why-stat:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(11, 46, 89, 0.12);
+}
+
+.why-stat-number {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2.5rem, 3.5vw, 4rem);
+  font-weight: 700;
+  color: #0B2E59;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.why-stat-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(0.7rem, 0.8vw, 0.85rem);
   font-weight: 600;
-  color: #fff;
-  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #0B2E59;
+  text-transform: uppercase;
+  opacity: 0.55;
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+
+/* ===================================================================
+   RESPONSIVE — TABLET (max 1024px)
+   =================================================================== */
+
+@media (max-width: 1024px) {
+  .why-stat-number {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+}
+
+
+/* ===================================================================
+   RESPONSIVE — MOBILE (max 768px)
+   =================================================================== */
+
+@media (max-width: 768px) {
+  .why-strip {
+    flex-wrap: wrap;
+  }
+
+  .why-stat {
+    flex: 0 0 50%;
+    padding: 24px 16px;
+  }
+
+  /* Reset dividers for wrapped layout */
+  .why-stat::after {
+    display: none !important;
+  }
+
+  .why-stat:nth-child(odd) {
+    border-right: 1px solid rgba(11, 46, 89, 0.1);
+  }
+
+  .why-stat:nth-child(-n+3) {
+    border-bottom: 1px solid rgba(11, 46, 89, 0.1);
+  }
+
+  .why-stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .why-stat {
+    flex: 0 0 100%;
+    border-right: none !important;
+  }
+
+  .why-stat:not(:last-child) {
+    border-bottom: 1px solid rgba(11, 46, 89, 0.1);
+  }
 }

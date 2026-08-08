@@ -190,3 +190,42 @@
     display: flex;
   }
 }
+
+/* Dark hero overrides — transparent bg, white text */
+.hero-container .luxury-navbar {
+  background-color: transparent;
+  background-image: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-container .nav-links li a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-container .nav-links li a:hover,
+.hero-container .nav-links li a.active {
+  color: #ffffff;
+}
+
+.hero-container .nav-links li a .underline-effect {
+  background-color: #ffffff;
+}
+
+.hero-container .nav-cta {
+  background-color: #ffffff;
+  color: #0B2E59;
+}
+
+.hero-container .nav-cta:hover {
+  background-color: #4da6ff;
+  color: #fff;
+}
+
+.hero-container .nav-img-logo {
+  mix-blend-mode: normal;
+  filter: brightness(0) invert(1);
+}
+
+.hero-container .hamburger .bar {
+  background-color: #ffffff;
+}
