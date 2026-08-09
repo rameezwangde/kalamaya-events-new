@@ -20,15 +20,16 @@ const fadeUp = {
 const EventsPage = () => {
   return (
     <>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+      >
+        <Navbar />
+      </motion.div>
+
       {/* ===== SECTION 1: DARK CINEMATIC HERO ===== */}
       <div className="hero-container">
-        <motion.div
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-        >
-          <Navbar />
-        </motion.div>
 
         <section className="hero-section">
           {/* Background image */}
