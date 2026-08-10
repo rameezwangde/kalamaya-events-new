@@ -59,12 +59,12 @@ const AboutPage = () => {
 
               {/* BLOCK 2: Image Block */}
               <motion.div variants={fadeUpVariants} className="about-block block-image">
-                <img src="/src/assets/luxury_event_wedding.png" alt="Kalamaya Event" className="block-img" />
+                <img src="https://res.cloudinary.com/crw5jo8x/image/upload/v1786339766/kalamaya_events_photos/IBM/WhatsApp_Image_2024-08-30_at_5.52.42_PM.jpg" alt="Kalamaya Event" className="block-img" />
               </motion.div>
 
               {/* BLOCK 3: Secondary Image / Accent */}
               <motion.div variants={fadeUpVariants} className="about-block block-image-small">
-                <img src="/src/assets/services_intro.png" alt="Event Setup" className="block-img" />
+                <img src="https://res.cloudinary.com/crw5jo8x/image/upload/v1786339792/kalamaya_events_photos/nissan/11.jpg" alt="Event Setup" className="block-img" />
               </motion.div>
 
               {/* BLOCK 4: Highlight Text */}

@@ -63,7 +63,7 @@ const CorporatePage = () => {
           <div
             className="corp-hero-bg"
             style={{
-              backgroundImage: `url("https://res.cloudinary.com/crw5jo8x/image/upload/v1786130942/AF6I0079_sx1akd.jpg")`,
+              backgroundImage: `url("https://res.cloudinary.com/crw5jo8x/image/upload/v1786339792/kalamaya_events_photos/nissan/11.jpg")`,
             }}
           />
           <div className="corp-hero-overlay" />

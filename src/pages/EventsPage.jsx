@@ -182,7 +182,7 @@ const EventsPage = () => {
             transition={{ duration: 1, ease: 'easeOut' }}
           >
             <img
-              src="https://res.cloudinary.com/crw5jo8x/image/upload/v1786130942/AF6I0079_sx1akd.jpg"
+              src="https://res.cloudinary.com/crw5jo8x/image/upload/v1786339602/kalamaya_events_photos/Dhanam/P1111664.jpg"
               alt="Kalamaya Event Setup"
               className="bold-story-image"
             />
