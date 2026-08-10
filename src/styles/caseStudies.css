@@ -176,7 +176,6 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 200px;
   gap: 12px;
 }
 
@@ -204,6 +203,7 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: 2px;
+  aspect-ratio: 1 / 1;
 }
 
 .pf-card-image {
@@ -390,7 +390,6 @@
 
   .pf-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 180px;
   }
 
   .pf-card-large {
@@ -430,7 +429,6 @@
 
   .pf-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: 200px;
   }
 
   .pf-card-large,
@@ -464,3 +462,5 @@
     gap: 20px;
   }
 }
+
+/* forcing reload 2 */

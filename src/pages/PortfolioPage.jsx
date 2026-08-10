@@ -7,62 +7,48 @@ import '../styles/caseStudies.css';
 const categories = ["All", "Corporate", "Weddings", "Conferences", "Launches", "Public"];
 
 const portfolioItems = [
-  {
-    category: "Corporate",
-    title: "Global Leadership Summit 2024",
-    client: "Fortune 500 Tech Company",
-    location: "Hyderabad",
-    size: "large",
-  },
-  {
-    category: "Weddings",
-    title: "Royal Palace Wedding",
-    client: "Private Family",
-    location: "Udaipur, Rajasthan",
-    size: "small",
-  },
-  {
-    category: "Launches",
-    title: "EV Product Launch & Expo",
-    client: "Automobile Giant",
-    location: "Mumbai",
-    size: "small",
-  },
-  {
-    category: "Conferences",
-    title: "Pharma Innovation Conclave",
-    client: "Healthcare Leader",
-    location: "New Delhi",
-    size: "medium",
-  },
-  {
-    category: "Corporate",
-    title: "Annual Dealer Meet 2024",
-    client: "FMCG Brand",
-    location: "Goa",
-    size: "medium",
-  },
-  {
-    category: "Public",
-    title: "City Cultural Festival",
-    client: "State Government",
-    location: "Kerala",
-    size: "large",
-  },
-  {
-    category: "Weddings",
-    title: "Backwater Destination Wedding",
-    client: "Private Family",
-    location: "Kumarakom, Kerala",
-    size: "small",
-  },
-  {
-    category: "Launches",
-    title: "Fintech App Launch",
-    client: "BFSI Startup",
-    location: "Bangalore",
-    size: "small",
-  },
+  { category: "Corporate", title: "future", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "adani sangatan", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "aster mimis", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "CBL", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "concellium", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Dhanam", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "forum mall installation", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "G-Studios Launch", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "GKFC", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Gokulam", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Gokulam Football Club", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "goldi solar", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "helix", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Hilux Board fest", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Huddle Exhibition", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "huddle global", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "IBM", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "JUNIOR CHEF", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Kanakakkunn Trivandrum", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "nissan", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Nissan Digital Hub", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Ramco", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "rcc", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "ric", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "SET 2", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "smartcity", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "solar expo 2025", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "soti", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "thula", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "tiecon", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "times of India", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "tulah binnale", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "ul cyberpark", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "UNGCNI", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "vespa Promotional activity(inside mall)(vespa agency bombay)", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "vikram sara bhai", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "voltas", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "VSSC", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "Wealth i", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "yes", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "zafin rise", client: "Client", location: "Location", size: "small" },
+  { category: "Corporate", title: "zerone", client: "Client", location: "Location", size: "small" }
 ];
 
 const PortfolioPage = () => {
@@ -198,3 +184,5 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
+// forcing reload 2
