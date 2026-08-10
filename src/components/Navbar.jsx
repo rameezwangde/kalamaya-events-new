@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink, Link } from 'react-router-dom';
 import '../styles/navbar.css';
-import eventsLogo from '../assets/events logo.jpeg';
+import kalamayaLogo from '../assets/kalamaya_logo.jpeg';
 
 const navItems = [
   { name: 'Home', path: '/events' },
@@ -47,7 +47,7 @@ const Navbar = () => {
         {/* LOGO */}
         <div className="nav-logo">
           <Link to="/">
-            <img src={eventsLogo} alt="Kalamaya Events" className="nav-img-logo" />
+            <img src={kalamayaLogo} alt="Kalamaya Events" className="nav-img-logo" />
           </Link>
         </div>
 
