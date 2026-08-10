@@ -3,6 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/caseStudies.css';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import portfolioImages from '../data/portfolioImages.json';
 
 const categories = ["All", "Corporate", "Weddings", "Conferences", "Launches", "Public"];
 
@@ -53,6 +59,16 @@ const portfolioItems = [
 
 const PortfolioPage = () => {
   const [activeFilter, setActiveFilter] = useState("All");
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImages, setCurrentImages] = useState([]);
+
+  const handleCardClick = (title) => {
+    const images = portfolioImages[title] || [];
+    if (images.length > 0) {
+      setCurrentImages(images);
+      setLightboxOpen(true);
+    }
+  };
 
   const filteredItems = activeFilter === "All"
     ? portfolioItems
@@ -124,36 +140,39 @@ const PortfolioPage = () => {
       <section className="pf-grid-section">
         <div className="pf-grid">
           <AnimatePresence mode="popLayout">
-            {filteredItems.map((item, idx) => (
-              <motion.div
-                className={`pf-card pf-card-${item.size}`}
-                key={item.title}
-                layout
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.4, delay: idx * 0.06 }}
-              >
-                {/* Image placeholder — replace src later */}
-                <div className="pf-card-image">
-                  <div className="pf-card-placeholder">
-                    <span className="pf-card-placeholder-num">{String(idx + 1).padStart(2, '0')}</span>
+              {filteredItems.map((item, idx) => {
+                const imagesForEvent = portfolioImages[item.title] || [];
+                const coverImage = imagesForEvent.length > 0 ? imagesForEvent[0].cover : null;
+                return (
+                <motion.div
+                  className={`pf-card pf-card-${item.size}`}
+                  key={item.title}
+                  layout
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.4, delay: idx * 0.06 }}
+                  onClick={() => handleCardClick(item.title)}
+                >
+                  <div className="pf-card-image">
+                    {coverImage ? (
+                      <img src={coverImage} alt={item.title} className="pf-card-image" style={{objectFit: 'cover'}} loading="lazy" />
+                    ) : (
+                      <div className="pf-card-placeholder">
+                        <span className="pf-card-placeholder-num">{String(idx + 1).padStart(2, '0')}</span>
+                      </div>
+                    )}
                   </div>
-                </div>
 
-                <div className="pf-card-overlay">
-                  <span className="pf-card-cat">{item.category}</span>
-                  <h3 className="pf-card-title">{item.title}</h3>
-                  <div className="pf-card-details">
-                    <span className="pf-card-detail">{item.client}</span>
-                    <span className="pf-card-dot">•</span>
-                    <span className="pf-card-detail">{item.location}</span>
+                  <div className="pf-card-overlay">
+                    <span className="pf-card-cat">{item.category}</span>
+                    <h3 className="pf-card-title">{item.title}</h3>
                   </div>
-                </div>
 
-                <div className="pf-card-arrow">&#x2197;</div>
-              </motion.div>
-            ))}
+                  <div className="pf-card-arrow">&#x2197;</div>
+                </motion.div>
+                );
+              })}
           </AnimatePresence>
         </div>
       </section>
@@ -179,6 +198,12 @@ const PortfolioPage = () => {
       </section>
 
       <Footer />
+      <Lightbox
+        open={lightboxOpen}
+        close={() => setLightboxOpen(false)}
+        slides={currentImages}
+        plugins={[Zoom, Thumbnails]}
+      />
     </>
   );
 };
