@@ -143,7 +143,6 @@ const CorporatePage = () => {
                 <span className="corp-service-num">{String(idx + 1).padStart(2, '0')}</span>
                 <h3 className="corp-service-title">{service.title}</h3>
                 <p className="corp-service-desc">{service.desc}</p>
-                <span className="corp-service-arrow">&#x2197;</span>
               </motion.div>
             ))}
           </div>
