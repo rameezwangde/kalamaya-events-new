@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink, Link } from 'react-router-dom';
 import '../styles/navbar.css';
 import kalamayaLogo from '../assets/kalamaya_logo.jpeg';
@@ -36,6 +36,8 @@ const itemVariants = {
 };
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <motion.nav
       className="luxury-navbar"
@@ -52,21 +54,33 @@ const Navbar = () => {
         </div>
 
         {/* LINKS */}
-        <ul className="nav-links">
+        <ul className={`nav-links ${isOpen ? 'mobile-open' : ''}`}>
           {navItems.map((item, index) => (
             <motion.li key={index} variants={itemVariants}>
               <NavLink
                 to={item.path}
                 className={({ isActive }) => (isActive && item.path !== '#') ? 'active' : ''}
+                onClick={() => setIsOpen(false)}
               >
                 {item.name}
                 <span className="underline-effect"></span>
               </NavLink>
             </motion.li>
           ))}
+          {/* CTA ON MOBILE */}
+          {isOpen && (
+            <motion.li variants={itemVariants} className="nav-mobile-cta">
+              <Link to="/" className="nav-back-btn" onClick={() => setIsOpen(false)}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="nav-back-icon">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>Main Menu</span>
+              </Link>
+            </motion.li>
+          )}
         </ul>
 
-        {/* CTA */}
+        {/* CTA (desktop) */}
         <motion.div className="nav-cta-wrapper" variants={itemVariants}>
           <Link to="/" className="nav-back-btn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="nav-back-icon">
@@ -77,7 +91,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* MOBILE HAMBURGER (hidden on desktop) */}
-        <div className="hamburger">
+        <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>

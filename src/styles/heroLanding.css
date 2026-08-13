@@ -396,3 +396,60 @@
   -webkit-mask-image:none;
   mask-image:none;
 }
+
+@media(max-width:767px){
+  /* Overrides for mobile layout */
+  .light-landing__events-logo { top: 20px !important; left: 16px !important; width: auto !important; }
+  .light-landing__events-logo img { height: 40px !important; }
+  .light-landing__cineverse-top-logo { top: 20px !important; right: 16px !important; }
+  .light-landing__cineverse-top-logo img { height: 40px !important; }
+  
+  .light-landing__left-content p,
+  .light-landing__right-content p { display: none !important; }
+  
+  .theme-toggle-btn { bottom: 90px !important; right: 20px !important; width: 40px !important; height: 40px !important; }
+  
+  .light-landing__left-content,
+  .light-landing__right-content { bottom: 20px !important; width: calc(50% - 16px) !important; z-index: 20 !important; }
+  .light-landing__left-content { left: 10px !important; }
+  .light-landing__right-content { right: 10px !important; }
+  
+  .light-landing__left-content .light-landing__cta,
+  .light-landing__right-content .light-landing__cta { width: 100% !important; min-width: 0 !important; padding: 0 8px !important; min-height: 48px !important; }
+  .light-landing__cta span { font-size: 11px !important; }
+  .light-landing__cta svg { display: none !important; }
+  
+  .light-landing__headline { top: 75px !important; width: 100% !important; }
+  .light-landing__headline h1 { font-size: clamp(32px, 10vw, 44px) !important; }
+}
+
+@media(max-width:768px) {
+  /* Dark Mode Mobile Overrides */
+  .hero-panel { height: 50vh !important; }
+  
+  .top-left-logo { top: 15px !important; left: 15px !important; }
+  .top-left-logo img { height: 35px !important; }
+  
+  .top-right-logo { top: auto !important; bottom: 15px !important; left: 15px !important; right: auto !important; }
+  .top-right-logo .cineverse-logo { height: 35px !important; }
+  
+  .top-center-heading { top: 55px !important; width: 100% !important; padding: 0 10px !important; z-index: 20 !important; }
+  .legacy-text { font-size: 11px !important; margin-bottom: 4px !important; }
+  .worlds-text { font-size: clamp(28px, 8vw, 38px) !important; line-height: 1 !important; }
+  .infinite-text { font-size: clamp(24px, 6vw, 30px) !important; margin-top: 5px !important; }
+  
+  .hero-energy-ring { top: 50% !important; width: 260px !important; }
+  
+  .bottom-content { z-index: 15 !important; }
+  .left-content { bottom: 15% !important; left: 15px !important; }
+  .right-content { bottom: 25% !important; right: 15px !important; text-align: right !important; }
+  
+  .headline { font-size: 16px !important; margin-bottom: 10px !important; }
+  .btn { padding: 8px 18px !important; font-size: 11px !important; }
+  .arrow { margin-left: 8px !important; }
+  
+  .scroll-indicator { display: none !important; }
+  
+  .theme-toggle-btn.dark-mode { bottom: 20px !important; right: 20px !important; }
+}
+
